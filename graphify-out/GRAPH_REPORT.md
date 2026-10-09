@@ -1,16 +1,16 @@
 # Graph Report - SignSpeak  (2026-10-09)
 
 ## Corpus Check
-- 250 files · ~1,958,401 words
+- 250 files · ~1,958,582 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1358 nodes · 3791 edges · 103 communities (80 shown, 23 thin omitted)
+- 1360 nodes · 3794 edges · 106 communities (79 shown, 27 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 70 edges (avg confidence: 0.7)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fad42d42`
+- Built from commit: `7e82aab1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,6 +51,7 @@
 - graphify reference: query, path, explain
 - SignSpeak — project context
 - In-domain clips recorded in the app
+- README.md
 - 2. Stage models (built in roadmap order)
 - graphify reference: add a URL and watch a folder
 - graphify reference: commit hook and native CLAUDE.md integration
@@ -85,6 +86,10 @@
 - Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres
 - graphify reference: extraction subagent prompt
 - Path
+- Prompt
+- prog
+- classifier.ts
+- .init
 - compilerOptions
 - plugins
 - Lyrics
@@ -99,7 +104,6 @@
 - timeline.ts
 - tsconfig.scripts.json
 - Compositor
-- prompt-data.ts
 - vite.config.ts
 
 ## God Nodes (most connected - your core abstractions)
@@ -129,27 +133,27 @@
 ## Import Cycles
 - None detected.
 
-## Communities (103 total, 23 thin omitted)
+## Communities (106 total, 27 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.12
-Nodes (26): LiveMode, LiveLetterState, useLiveLetter(), GlossToken, Sample, State, useStore, speak() (+18 more)
+Nodes (26): FeatureFrame, LiveMode, LiveLetterState, GlossToken, Sample, State, useStore, speak() (+18 more)
 
 ### Community 1 - "devDependencies"
 Cohesion: 0.05
 Nodes (43): @mediapipe/tasks-vision, oxlint, dependencies, @mediapipe/tasks-vision, react, react-dom, react-router-dom, zustand (+35 more)
 
 ### Community 2 - "package.json"
-Cohesion: 0.12
-Nodes (19): react, App(), AppMode, DemoTutorial, SentenceBuilder, TABS, Login(), router (+11 more)
+Cohesion: 0.16
+Nodes (15): react, App(), AppMode, DemoTutorial, SentenceBuilder, TABS, Login(), BeforeInstallPromptEvent (+7 more)
 
 ### Community 3 - "compilerOptions"
 Cohesion: 0.12
 Nodes (25): MLPClassifier, run_fingerspell(), run_words(), main(), score(), aggregate(), augment_frames(), dedupe() (+17 more)
 
 ### Community 4 - "CameraSource.ts"
-Cohesion: 0.24
-Nodes (6): ARCH(), Crazy, loadClip(), loadGlossFonts(), lineOf(), wordOf()
+Cohesion: 0.17
+Nodes (8): pulse(), ARCH(), Crazy, ARCH(), Verdict, drawKaraoke(), KaraokeOpts, w2s()
 
 ### Community 5 - "App.tsx"
 Cohesion: 0.07
@@ -158,10 +162,6 @@ Nodes (26): dependencies, opentype.js, three, devDependencies, playwright-core, 
 ### Community 6 - "plugins"
 Cohesion: 0.15
 Nodes (24): ensure_pose_model(), extract_clip(), _lm_dict(), main(), make_hand_landmarker(), make_pose_landmarker(), pick_video(), _blendshapes() (+16 more)
-
-### Community 7 - "CameraSource"
-Cohesion: 0.17
-Nodes (17): Word, Scene, Slam, Captions, Clip, Predictions, Box, Pipeline (+9 more)
 
 ### Community 8 - "tsconfig.json"
 Cohesion: 0.08
@@ -176,24 +176,20 @@ Cohesion: 0.09
 Nodes (21): 0. ✅ Design skills made personal — done 2026-08-15, 1. 🟡 Browser-verify the six unverified commits — **the real work, still open**, §1 · The HELLO finding (this session) — read before touching recognition, §2 · Panel skill + OmniRoute — added 2026-08-14, 2. Tune `MOTION_IS_WORD` from live use — ~2 min after step 1, 3. Record clips that capture whole signs — the only real accuracy lever, 4. ✅ Ponytail cuts applied 2026-08-15 — partially, on purpose, 4b. 🆕 Blank first paint on every route — fixed 2026-08-15 (+13 more)
 
 ### Community 11 - "ROADMAP — SignSpeak"
-Cohesion: 0.10
-Nodes (24): HEX, absorb(), at1(), Box, bridge(), FACES, FigureOpts, fitBox() (+16 more)
+Cohesion: 0.15
+Nodes (14): layout(), textPoints(), ARCH(), Hook, ARCH(), Model, arc(), fitRow() (+6 more)
 
 ### Community 13 - "PRD — SignSpeak"
 Cohesion: 0.11
 Nodes (18): 1. 🌟 Executive Creative Vision: "Bridging Worlds at the Speed of Light", 2. 🎭 Interactive 3D Page Sections & Animation Choreography, 3. 🎬 Google Flow & AI Generation Prompts (Cinematic Video & 3D Assets), 4. 🎨 Design System: Color Palette, Typography & Aesthetics, 5. 🛠️ Technical Architecture & Implementation Stack, 6. 🚀 Next Steps & Execution Plan, Color Palette (Futuristic Dark Minimalist), Prompt 1: Hero Background & Holographic Gesture Loop (Google Flow / Veo) (+10 more)
 
 ### Community 14 - "main"
-Cohesion: 0.11
-Nodes (24): ALPHABET, LESSONS, Sign, WORDS_BY_CATEGORY, Attempt, PracticeState, ProgressEntry, usePracticeStore (+16 more)
-
-### Community 15 - "graphify reference: extra exports and benchmark"
-Cohesion: 0.29
-Nodes (3): CameraSource, CameraViewImpl(), pickAlternate()
+Cohesion: 0.10
+Nodes (26): PASS_CONFIDENCE, ALPHABET, LESSONS, Sign, WORDS_BY_CATEGORY, Attempt, PracticeState, ProgressEntry (+18 more)
 
 ### Community 16 - "graphify reference: query, path, explain"
-Cohesion: 0.18
-Nodes (8): PASS_CONFIDENCE, FingerspellSlot(), SentenceBuilder, SentenceBuilderImpl(), Slot, Template, TEMPLATES, WordSlot()
+Cohesion: 0.16
+Nodes (11): keys(), lerp(), pointAtLength(), ARCH(), Edits, squareAt(), squareAt(), at() (+3 more)
 
 ### Community 17 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.18
@@ -271,6 +267,10 @@ Nodes (7): Architecture snapshot, Common commands, Current state (2026-07-28), D
 Cohesion: 0.67
 Nodes (3): hand_block(), main(), Real model output for the plates: run the live fingerspell model on the referenc
 
+### Community 38 - "README.md"
+Cohesion: 0.67
+Nodes (3): hits, POST(), rateLimited()
+
 ### Community 41 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
 Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
@@ -292,40 +292,52 @@ Cohesion: 0.14
 Nodes (7): clean(), FeatureReadout(), fmt(), Gloss(), NameSpeller(), readReturning(), SignPlayer
 
 ### Community 47 - "Fabricate an easily-separable dataset — proves the training pipeline plumbing."
-Cohesion: 0.28
-Nodes (20): AudioSample, Frame, PostOverrides, figure(), frameIdx(), frameRect(), GF, marked() (+12 more)
+Cohesion: 0.15
+Nodes (12): drawReadout(), formatPDoom(), Hud, HudState, mix(), clamp(), invLerp(), remap() (+4 more)
 
 ### Community 49 - "Hold out one signer for test. Falls back to random split if only one signer."
-Cohesion: 0.07
-Nodes (61): BlendMode, Layer2D, RT_SCALE, rtScale(), scaleContext2D(), LineBatch, LineBlend, Line (+53 more)
+Cohesion: 0.05
+Nodes (116): AudioSample, BlendMode, Layer2D, RT_SCALE, rtScale(), scaleContext2D(), LineBatch, LineBlend (+108 more)
 
 ### Community 50 - "lerp"
-Cohesion: 0.67
-Nodes (4): fade(), fbm2(), noise2(), noise3()
+Cohesion: 0.22
+Nodes (3): ARCH(), CodeScene, expo()
 
 ### Community 53 - "Return (train_idx, test_idx, holdout_name). Mirrors signer_split logic     but r"
 Cohesion: 0.09
 Nodes (28): Hero(), How(), CTA, FACTS, HERO_SEQUENCE, LINKS, MODES, PIPELINE (+20 more)
 
 ### Community 54 - "rgba"
-Cohesion: 0.05
-Nodes (62): drawReadout(), formatPDoom(), Hud, HudState, mix(), rgba(), F, font() (+54 more)
+Cohesion: 0.25
+Nodes (13): rgba(), F, font(), glyphX(), mctx(), measure(), drawMask2D(), sparkHead2D() (+5 more)
 
 ### Community 56 - "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 → 2*FEATURE_L"
-Cohesion: 0.15
-Nodes (7): ConfidenceBar, EMPTY, TopK, DemoTutorial, Props, STEPS, StepView()
+Cohesion: 0.09
+Nodes (19): useLiveLetter(), router, CameraView, ConfidenceBar, EMPTY, TopK, RouteFallback(), FingerspellSlot() (+11 more)
 
 ### Community 65 - "stroke.ts"
-Cohesion: 0.12
-Nodes (22): addTypographic(), approach(), fonts, inkBox(), isLetter(), isLower(), loadStrokeFonts(), moved() (+14 more)
+Cohesion: 0.10
+Nodes (25): addTypographic(), approach(), fonts, inkBox(), isLetter(), isLower(), moved(), OPEN_L (+17 more)
 
 ### Community 67 - "MediaPipe returns hand_landmarks + handedness in parallel lists."
-Cohesion: 0.21
-Nodes (8): Loaded, FSPass, fullscreenGeometry(), makeRT(), SS_TAP, Caption, DEFAULT_POST, Post
+Cohesion: 0.19
+Nodes (9): AdaptiveSampling, Loaded, FSPass, fullscreenGeometry(), makeRT(), SS_TAP, Caption, DEFAULT_POST (+1 more)
 
 ### Community 72 - "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (24): cache, ClipRenderer, HandColors, LETTERS, loadClip(), makeRenderer(), Loaded, SignPlayer (+16 more)
+
+### Community 75 - "Prompt"
+Cohesion: 0.30
+Nodes (4): plain(), Prompt, V3, returnArrow()
+
+### Community 76 - "prog"
+Cohesion: 0.35
+Nodes (4): prog(), ARCH(), expo(), Frames
+
+### Community 77 - "classifier.ts"
+Cohesion: 0.21
+Nodes (6): Classifier, forward(), Layer, meanStd(), Model, softmax()
 
 ### Community 79 - "compilerOptions"
 Cohesion: 0.10
@@ -340,28 +352,28 @@ Cohesion: 0.13
 Nodes (3): PDoom, fold(), Lyrics
 
 ### Community 98 - "type.ts"
-Cohesion: 0.15
-Nodes (12): ARCHIVO_WEIGHTS, ARCHIVO_WIDTHS, bufCache, DEFS, fitSize(), FontDef, Glyph, ot() (+4 more)
+Cohesion: 0.09
+Nodes (25): ARCHIVO_WEIGHTS, ARCHIVO_WIDTHS, bufCache, DEFS, fitSize(), FontDef, Glyph, ot() (+17 more)
 
 ### Community 99 - "core.ts"
-Cohesion: 0.13
-Nodes (16): FeatureFrame, Classifier, forward(), Layer, meanStd(), Model, Prediction, softmax() (+8 more)
+Cohesion: 0.23
+Nodes (9): Prediction, Channel, Display, Mode, MODES_FOR, RecognizerCommit, RecognizerOptions, RecognizerUpdate (+1 more)
 
 ### Community 100 - "render.ts"
-Cohesion: 0.11
-Nodes (19): APP, argv, ensureDir(), ensureServer(), flag(), hist(), openPage(), opt() (+11 more)
+Cohesion: 0.24
+Nodes (14): APP, argv, ensureDir(), ensureServer(), flag(), hist(), openPage(), opt() (+6 more)
 
 ### Community 101 - "Engine"
 Cohesion: 0.20
-Nodes (4): Engine, ternaryOffsets(), PostParams, loadFonts()
+Nodes (4): Engine, ternaryOffsets(), clearRT(), PostParams
 
 ### Community 103 - "compilerOptions"
 Cohesion: 0.08
 Nodes (23): DOM, ES2023, src, vite/client, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly (+15 more)
 
 ### Community 105 - "main.ts"
-Cohesion: 0.23
-Nodes (11): AdaptiveSampling, boot(), canvas, engine, EXPORT, ONLY, params, setupExport() (+3 more)
+Cohesion: 0.25
+Nodes (10): boot(), canvas, engine, EXPORT, ONLY, params, setupExport(), setupPlayer() (+2 more)
 
 ### Community 107 - "compilerOptions"
 Cohesion: 0.10
@@ -375,33 +387,25 @@ Nodes (7): AudioJSON, FEATURES, TimelineEntry, SceneClass, makeTimeline(), modul
 Cohesion: 0.25
 Nodes (7): bun, scripts, ./tsconfig.json, compilerOptions, types, extends, include
 
-### Community 112 - "Compositor"
-Cohesion: 0.33
-Nodes (3): clearRT(), Compositor, SceneCtx
-
-### Community 113 - "prompt-data.ts"
-Cohesion: 0.40
-Nodes (4): Cand, PieceSpec, SPECS, Tok
-
 ## Knowledge Gaps
-- **332 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+327 more)
+- **333 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+328 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **27 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `P` connect `render.ts` to `Hold out one signer for test. Falls back to random split if only one signer.`, `CameraSource.ts`, `rgba`?**
+- **Why does `P` connect `ROADMAP — SignSpeak` to `Hold out one signer for test. Falls back to random split if only one signer.`, `lerp`, `render.ts`, `CameraSource.ts`?**
   _High betweenness centrality (0.189) - this node is a cross-community bridge._
-- **Why does `CameraViewImpl()` connect `graphify reference: extra exports and benchmark` to `Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres`, `render.ts`, `Capture`?**
+- **Why does `sheet()` connect `render.ts` to `ROADMAP — SignSpeak`?**
   _High betweenness centrality (0.188) - this node is a cross-community bridge._
+- **Why does `CameraViewImpl()` connect `Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres` to `render.ts`, `Capture`, `graphify reference: extra exports and benchmark`?**
+  _High betweenness centrality (0.186) - this node is a cross-community bridge._
 - **What connects `$schema`, `typescript`, `oxc` to the rest of the system?**
-  _332 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _333 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.11746031746031746 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11561561561561562 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
-- **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.12183908045977011 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.12169312169312169 - nodes in this community are weakly interconnected._

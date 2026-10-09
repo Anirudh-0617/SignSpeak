@@ -74,6 +74,10 @@
   "72": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
   "73": "graphify reference: extraction subagent prompt",
   "74": "Path",
+  "75": "Prompt",
+  "76": "prog",
+  "77": "classifier.ts",
+  "78": ".init",
   "79": "compilerOptions",
   "81": "submit",
   "82": "plugins",
@@ -100,6 +104,5 @@
   "108": "timeline.ts",
   "111": "tsconfig.scripts.json",
   "112": "Compositor",
-  "113": "prompt-data.ts",
   "115": "vite.config.ts"
 }

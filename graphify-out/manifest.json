@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1791567900.8865178,
-    "ast_hash": "1aca23d970e1b9f2d17ce88257215698",
+    "mtime": 1791570302.5749454,
+    "ast_hash": "de0ee9a68fc0e68d74034adc06e0ce10",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1590,8 +1590,8 @@
     "semantic_hash": ""
   },
   "api/nvidia/v1/chat/completions.ts": {
-    "mtime": 1791567877.5706139,
-    "ast_hash": "c1beec533134a801fe53cccb76fb504a",
+    "mtime": 1791570115.2997248,
+    "ast_hash": "e8d079ec6aeae9f10f20450ff8996709",
     "semantic_hash": ""
   },
   "motion/app/package.json": {
