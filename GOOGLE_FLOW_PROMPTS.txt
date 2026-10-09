@@ -1,0 +1,29 @@
+================================================================================
+GOOGLE FLOW / VEO / AI VIDEO GENERATION PROMPTS & INSTRUCTIONS FOR SIGNSPEAK
+================================================================================
+
+HOW TO USE THESE PROMPTS IN GOOGLE FLOW / VEO:
+1. Copy each prompt text block below into Google Flow's text prompt input box.
+2. Set Aspect Ratio: 16:9 (Landscape) for background video loops, or 1:1 for 3D elements.
+3. Frame Rate: 60fps or high frame-rate smooth motion.
+4. Output Format: MP4 / WebM video loop.
+
+--------------------------------------------------------------------------------
+PROMPT 1: HERO BACKGROUND & HOLOGRAPHIC GESTURE LOOP
+--------------------------------------------------------------------------------
+Cinematic 8k video render, macro shot of futuristic hands made of translucent frosted glass and neon turquoise laser wireframes floating in dark cosmic space. The hands dynamically sign American Sign Language gestures. Glowing fiber-optic golden light particles stream out from the fingertips, creating glowing energy waves that morph into floating luminous 3D typography letters in mid-air. Octane render, ray-tracing, subtle depth of field, fluid motion, cyberpunk minimalism, hyper-detailed, 60fps smooth loop --ar 16:9 --style raw
+
+--------------------------------------------------------------------------------
+PROMPT 2: REAL-TIME TRANSLATION BRIDGE (DUAL PERSON SPATIAL COMMUNICATION)
+--------------------------------------------------------------------------------
+High-end tech cinematic commercial shot. On the left side, a stylish Deaf woman signing ASL with radiant cyan light tracking nodes on her hands and fingers. In the center, a flowing light beam of neural network nodes and glowing glass glyphs flying across a dark glass tunnel. On the right side, a man looking amazed as floating glowing 3D subtitles and holographic soundwave rings appear in real-time in front of him. Ultra-realistic, shallow depth of field, neon cyan and champagne gold palette, Apple aesthetic, Unreal Engine 5 render style --ar 16:9
+
+--------------------------------------------------------------------------------
+PROMPT 3: 3D HAND LANDMARK MESH & NEURAL CORE (STILL FRAME / REACTION)
+--------------------------------------------------------------------------------
+Anatomy of AI perception, 3D exploded view diagram of a human hand with 21 luminous holographic joint nodes connected by thin laser lines. Floating digital coordinates and glowing neural network connections around the knuckles. Dark obsidian background, frosted glass refraction, hyper-crisp detail, isometric 3D render, luxury futuristic UI design --ar 1:1
+
+--------------------------------------------------------------------------------
+PROMPT 4: SPATIAL GLASSMORPHISM CARD TEXTURE & CAUSTICS
+--------------------------------------------------------------------------------
+Abstract 3D glassmorphism surface with liquid light refractions, soft neon gradients of deep sapphire blue (#0066FF), electric teal (#00F0FF), and warm gold. Caustics effect, clean blur backdrop, sleek dark mode UI texture, 8k resolution, photorealistic render --ar 16:9

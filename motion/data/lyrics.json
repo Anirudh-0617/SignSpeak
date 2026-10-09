@@ -1,0 +1,821 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "This is HELLO, in American Sign Language.",
+   "start": 0.64,
+   "end": 3.09,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.64,
+     "end": 0.88
+    },
+    {
+     "w": "is",
+     "start": 0.88,
+     "end": 1.0
+    },
+    {
+     "w": "HELLO,",
+     "start": 1.0,
+     "end": 1.45
+    },
+    {
+     "w": "in",
+     "start": 1.69,
+     "end": 1.82
+    },
+    {
+     "w": "American",
+     "start": 1.82,
+     "end": 2.32
+    },
+    {
+     "w": "Sign",
+     "start": 2.32,
+     "end": 2.6
+    },
+    {
+     "w": "Language.",
+     "start": 2.6,
+     "end": 3.09
+    }
+   ]
+  },
+  {
+   "text": "If you don't sign, it's just a gesture.",
+   "start": 3.6,
+   "end": 5.59,
+   "words": [
+    {
+     "w": "If",
+     "start": 3.6,
+     "end": 3.72
+    },
+    {
+     "w": "you",
+     "start": 3.72,
+     "end": 3.82
+    },
+    {
+     "w": "don't",
+     "start": 3.82,
+     "end": 4.04
+    },
+    {
+     "w": "sign,",
+     "start": 4.04,
+     "end": 4.43
+    },
+    {
+     "w": "it's",
+     "start": 4.58,
+     "end": 4.78
+    },
+    {
+     "w": "just",
+     "start": 4.78,
+     "end": 4.95
+    },
+    {
+     "w": "a",
+     "start": 4.95,
+     "end": 5.1
+    },
+    {
+     "w": "gesture.",
+     "start": 5.1,
+     "end": 5.59
+    }
+   ]
+  },
+  {
+   "text": "SignSpeak reads it, live, right in your browser.",
+   "start": 6.58,
+   "end": 9.39,
+   "words": [
+    {
+     "w": "SignSpeak",
+     "start": 6.58,
+     "end": 7.18,
+     "syl": [
+      [
+       6.58,
+       6.94
+      ],
+      [
+       6.94,
+       7.18
+      ]
+     ]
+    },
+    {
+     "w": "reads",
+     "start": 7.18,
+     "end": 7.56
+    },
+    {
+     "w": "it,",
+     "start": 7.56,
+     "end": 7.61
+    },
+    {
+     "w": "live,",
+     "start": 7.95,
+     "end": 8.39
+    },
+    {
+     "w": "right",
+     "start": 8.39,
+     "end": 8.66
+    },
+    {
+     "w": "in",
+     "start": 8.66,
+     "end": 8.74
+    },
+    {
+     "w": "your",
+     "start": 8.74,
+     "end": 8.88
+    },
+    {
+     "w": "browser.",
+     "start": 8.88,
+     "end": 9.39
+    }
+   ]
+  },
+  {
+   "text": "The camera finds 21 points on each hand.",
+   "start": 10.32,
+   "end": 12.58,
+   "words": [
+    {
+     "w": "The",
+     "start": 10.32,
+     "end": 10.42
+    },
+    {
+     "w": "camera",
+     "start": 10.42,
+     "end": 10.82
+    },
+    {
+     "w": "finds",
+     "start": 10.82,
+     "end": 11.17
+    },
+    {
+     "w": "21",
+     "start": 11.17,
+     "end": 11.71,
+     "syl": [
+      [
+       11.17,
+       11.56
+      ],
+      [
+       11.56,
+       11.71
+      ]
+     ]
+    },
+    {
+     "w": "points",
+     "start": 11.71,
+     "end": 12.06
+    },
+    {
+     "w": "on",
+     "start": 12.06,
+     "end": 12.16
+    },
+    {
+     "w": "each",
+     "start": 12.16,
+     "end": 12.34
+    },
+    {
+     "w": "hand.",
+     "start": 12.34,
+     "end": 12.58
+    }
+   ]
+  },
+  {
+   "text": "Anchored to the wrist, they become 126 numbers.",
+   "start": 13.25,
+   "end": 16.65,
+   "words": [
+    {
+     "w": "Anchored",
+     "start": 13.25,
+     "end": 13.7
+    },
+    {
+     "w": "to",
+     "start": 13.7,
+     "end": 13.82
+    },
+    {
+     "w": "the",
+     "start": 13.82,
+     "end": 13.92
+    },
+    {
+     "w": "wrist,",
+     "start": 13.92,
+     "end": 14.25
+    },
+    {
+     "w": "they",
+     "start": 14.62,
+     "end": 14.78
+    },
+    {
+     "w": "become",
+     "start": 14.78,
+     "end": 15.14
+    },
+    {
+     "w": "126",
+     "start": 15.14,
+     "end": 16.04,
+     "syl": [
+      [
+       15.14,
+       15.28
+      ],
+      [
+       15.28,
+       15.57
+      ],
+      [
+       15.57,
+       15.88
+      ],
+      [
+       15.88,
+       16.04
+      ]
+     ]
+    },
+    {
+     "w": "numbers.",
+     "start": 16.2,
+     "end": 16.65
+    }
+   ]
+  },
+  {
+   "text": "A small neural network, running inside the page, names the sign.",
+   "start": 17.55,
+   "end": 21.2,
+   "words": [
+    {
+     "w": "A",
+     "start": 17.55,
+     "end": 17.7
+    },
+    {
+     "w": "small",
+     "start": 17.7,
+     "end": 18.04
+    },
+    {
+     "w": "neural",
+     "start": 18.04,
+     "end": 18.34
+    },
+    {
+     "w": "network,",
+     "start": 18.34,
+     "end": 18.7
+    },
+    {
+     "w": "running",
+     "start": 18.96,
+     "end": 19.28
+    },
+    {
+     "w": "inside",
+     "start": 19.28,
+     "end": 19.64
+    },
+    {
+     "w": "the",
+     "start": 19.64,
+     "end": 19.73
+    },
+    {
+     "w": "page,",
+     "start": 19.73,
+     "end": 20.14
+    },
+    {
+     "w": "names",
+     "start": 20.42,
+     "end": 20.76
+    },
+    {
+     "w": "the",
+     "start": 20.76,
+     "end": 20.88
+    },
+    {
+     "w": "sign.",
+     "start": 20.88,
+     "end": 21.2
+    }
+   ]
+  },
+  {
+   "text": "Hold a letter, and the highlighter fills.",
+   "start": 21.79,
+   "end": 23.8,
+   "words": [
+    {
+     "w": "Hold",
+     "start": 21.79,
+     "end": 22.04
+    },
+    {
+     "w": "a",
+     "start": 22.04,
+     "end": 22.12
+    },
+    {
+     "w": "letter,",
+     "start": 22.12,
+     "end": 22.4
+    },
+    {
+     "w": "and",
+     "start": 22.57,
+     "end": 22.68
+    },
+    {
+     "w": "the",
+     "start": 22.68,
+     "end": 22.78
+    },
+    {
+     "w": "highlighter",
+     "start": 22.78,
+     "end": 23.34
+    },
+    {
+     "w": "fills.",
+     "start": 23.34,
+     "end": 23.8
+    }
+   ]
+  },
+  {
+   "text": "Full means committed.",
+   "start": 24.31,
+   "end": 25.34,
+   "words": [
+    {
+     "w": "Full",
+     "start": 24.31,
+     "end": 24.62
+    },
+    {
+     "w": "means",
+     "start": 24.62,
+     "end": 24.9
+    },
+    {
+     "w": "committed.",
+     "start": 24.9,
+     "end": 25.34
+    }
+   ]
+  },
+  {
+   "text": "Letters become words.",
+   "start": 26.38,
+   "end": 27.67,
+   "words": [
+    {
+     "w": "Letters",
+     "start": 26.38,
+     "end": 26.82
+    },
+    {
+     "w": "become",
+     "start": 26.82,
+     "end": 27.2
+    },
+    {
+     "w": "words.",
+     "start": 27.2,
+     "end": 27.67
+    }
+   ]
+  },
+  {
+   "text": "Words become an editable transcript.",
+   "start": 28.19,
+   "end": 30.2,
+   "words": [
+    {
+     "w": "Words",
+     "start": 28.19,
+     "end": 28.66
+    },
+    {
+     "w": "become",
+     "start": 28.66,
+     "end": 29.04
+    },
+    {
+     "w": "an",
+     "start": 29.04,
+     "end": 29.17
+    },
+    {
+     "w": "editable",
+     "start": 29.17,
+     "end": 29.62
+    },
+    {
+     "w": "transcript.",
+     "start": 29.62,
+     "end": 30.2
+    }
+   ]
+  },
+  {
+   "text": "Press Translate, and the gloss becomes plain English, read out loud.",
+   "start": 31.24,
+   "end": 34.91,
+   "words": [
+    {
+     "w": "Press",
+     "start": 31.24,
+     "end": 31.52
+    },
+    {
+     "w": "Translate,",
+     "start": 31.52,
+     "end": 32.05
+    },
+    {
+     "w": "and",
+     "start": 32.29,
+     "end": 32.42
+    },
+    {
+     "w": "the",
+     "start": 32.42,
+     "end": 32.52
+    },
+    {
+     "w": "gloss",
+     "start": 32.52,
+     "end": 32.88
+    },
+    {
+     "w": "becomes",
+     "start": 32.88,
+     "end": 33.22
+    },
+    {
+     "w": "plain",
+     "start": 33.22,
+     "end": 33.58
+    },
+    {
+     "w": "English,",
+     "start": 33.58,
+     "end": 34.0
+    },
+    {
+     "w": "read",
+     "start": 34.14,
+     "end": 34.4
+    },
+    {
+     "w": "out",
+     "start": 34.4,
+     "end": 34.56
+    },
+    {
+     "w": "loud.",
+     "start": 34.56,
+     "end": 34.91
+    }
+   ]
+  },
+  {
+   "text": "Still learning? Copy the reference figure, and get scored live.",
+   "start": 35.87,
+   "end": 39.43,
+   "words": [
+    {
+     "w": "Still",
+     "start": 35.87,
+     "end": 36.2
+    },
+    {
+     "w": "learning?",
+     "start": 36.2,
+     "end": 36.59
+    },
+    {
+     "w": "Copy",
+     "start": 36.94,
+     "end": 37.26
+    },
+    {
+     "w": "the",
+     "start": 37.26,
+     "end": 37.38
+    },
+    {
+     "w": "reference",
+     "start": 37.38,
+     "end": 37.8
+    },
+    {
+     "w": "figure,",
+     "start": 37.8,
+     "end": 38.28
+    },
+    {
+     "w": "and",
+     "start": 38.28,
+     "end": 38.42
+    },
+    {
+     "w": "get",
+     "start": 38.42,
+     "end": 38.56
+    },
+    {
+     "w": "scored",
+     "start": 38.56,
+     "end": 39.0
+    },
+    {
+     "w": "live.",
+     "start": 39.0,
+     "end": 39.43
+    }
+   ]
+  },
+  {
+   "text": "Fingerspelling scores 98.3% on held-out images.",
+   "start": 40.39,
+   "end": 44.55,
+   "words": [
+    {
+     "w": "Fingerspelling",
+     "start": 40.39,
+     "end": 41.02
+    },
+    {
+     "w": "scores",
+     "start": 41.02,
+     "end": 41.56
+    },
+    {
+     "w": "98.3%",
+     "start": 41.56,
+     "end": 43.16,
+     "syl": [
+      [
+       41.56,
+       41.94
+      ],
+      [
+       41.94,
+       42.1
+      ],
+      [
+       42.21,
+       42.52
+      ],
+      [
+       42.52,
+       42.76
+      ],
+      [
+       42.76,
+       43.16
+      ]
+     ]
+    },
+    {
+     "w": "on",
+     "start": 43.49,
+     "end": 43.64
+    },
+    {
+     "w": "held-out",
+     "start": 43.64,
+     "end": 44.04,
+     "syl": [
+      [
+       43.64,
+       43.88
+      ],
+      [
+       43.88,
+       44.04
+      ]
+     ]
+    },
+    {
+     "w": "images.",
+     "start": 44.04,
+     "end": 44.55
+    }
+   ]
+  },
+  {
+   "text": "Word signs are early, at 56.5%.",
+   "start": 45.05,
+   "end": 48.24,
+   "words": [
+    {
+     "w": "Word",
+     "start": 45.05,
+     "end": 45.36
+    },
+    {
+     "w": "signs",
+     "start": 45.36,
+     "end": 45.7
+    },
+    {
+     "w": "are",
+     "start": 45.7,
+     "end": 45.84
+    },
+    {
+     "w": "early,",
+     "start": 45.84,
+     "end": 46.22
+    },
+    {
+     "w": "at",
+     "start": 46.53,
+     "end": 46.7
+    },
+    {
+     "w": "56.5%.",
+     "start": 46.7,
+     "end": 48.24,
+     "syl": [
+      [
+       46.7,
+       47.0
+      ],
+      [
+       47.0,
+       47.12
+      ],
+      [
+       47.26,
+       47.56
+      ],
+      [
+       47.56,
+       47.86
+      ],
+      [
+       47.86,
+       48.24
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "text": "We tell you that up front.",
+   "start": 48.85,
+   "end": 49.98,
+   "words": [
+    {
+     "w": "We",
+     "start": 48.85,
+     "end": 49.02
+    },
+    {
+     "w": "tell",
+     "start": 49.02,
+     "end": 49.22
+    },
+    {
+     "w": "you",
+     "start": 49.22,
+     "end": 49.36
+    },
+    {
+     "w": "that",
+     "start": 49.36,
+     "end": 49.56
+    },
+    {
+     "w": "up",
+     "start": 49.56,
+     "end": 49.63
+    },
+    {
+     "w": "front.",
+     "start": 49.63,
+     "end": 49.98
+    }
+   ]
+  },
+  {
+   "text": "Your camera feed never leaves the tab.",
+   "start": 51.08,
+   "end": 53.14,
+   "words": [
+    {
+     "w": "Your",
+     "start": 51.08,
+     "end": 51.24
+    },
+    {
+     "w": "camera",
+     "start": 51.24,
+     "end": 51.66
+    },
+    {
+     "w": "feed",
+     "start": 51.66,
+     "end": 51.97
+    },
+    {
+     "w": "never",
+     "start": 52.09,
+     "end": 52.44
+    },
+    {
+     "w": "leaves",
+     "start": 52.44,
+     "end": 52.7
+    },
+    {
+     "w": "the",
+     "start": 52.7,
+     "end": 52.8
+    },
+    {
+     "w": "tab.",
+     "start": 52.8,
+     "end": 53.14
+    }
+   ]
+  },
+  {
+   "text": "SignSpeak. Sign, and be understood.",
+   "start": 53.71,
+   "end": 55.94,
+   "words": [
+    {
+     "w": "SignSpeak.",
+     "start": 53.71,
+     "end": 54.36,
+     "syl": [
+      [
+       53.71,
+       54.1
+      ],
+      [
+       54.1,
+       54.36
+      ]
+     ]
+    },
+    {
+     "w": "Sign,",
+     "start": 54.68,
+     "end": 55.14
+    },
+    {
+     "w": "and",
+     "start": 55.14,
+     "end": 55.26
+    },
+    {
+     "w": "be",
+     "start": 55.26,
+     "end": 55.38
+    },
+    {
+     "w": "understood.",
+     "start": 55.38,
+     "end": 55.94
+    }
+   ]
+  }
+ ]
+}

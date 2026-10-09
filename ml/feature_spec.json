@@ -1,0 +1,30 @@
+{
+  "version": "0.4",
+  "source": "camera",
+  "dim": 178,
+  "coords": 3,
+  "layout": [
+    { "part": "leftHand",     "start": 0,   "count": 21, "stride": 3, "zeroFilledWhenAbsent": true },
+    { "part": "rightHand",    "start": 63,  "count": 21, "stride": 3, "zeroFilledWhenAbsent": true },
+    { "part": "faceBlendshapes", "start": 126, "count": 52, "stride": 1, "zeroFilledWhenAbsent": true }
+  ],
+  "normalization": {
+    "mode": "per-hand independent (hands); raw scores (blendshapes)",
+    "recenter": "each hand centered on its own wrist (landmark 0)",
+    "scale": "each hand scaled by distance wrist→middle-finger-MCP (landmark 9)",
+    "aspectCorrection": "x pre-multiplied by source aspect ratio (w/h)",
+    "blendshapes": "MediaPipe FaceLandmarker's 52 categorical blendshapes in canonical index order (0 = _neutral, then mouthSmile, browInnerUp, jawOpen, etc.). Raw [0, 1] scores, no normalization. Absent face → 52 zeros.",
+    "notes": "Hands + face blendshapes only. Face landmark positions themselves are NOT in the vector — the 52 semantic shape coefficients carry expression signal at 1/9th the dims."
+  },
+  "language": {
+    "note": "ASL-only project as of 2026-07-26. Feature vector is language-agnostic; models are per-language."
+  },
+  "canonicalSource": "src/perception/normalize.ts",
+  "changeRule": "If normalize.ts or the vector layout changes, bump version and update ml/import_media.py to match.",
+  "changelog": {
+    "0.4": "Added 52 face blendshapes for non-manual signals (NMS) — targets breaking the word-sign 72.7% ceiling. Hands block unchanged from v0.3.",
+    "0.3": "Hands-only (126 dims) with per-hand wrist-anchored normalization — usable with hand-close-up datasets and language-agnostic.",
+    "0.2": "Aspect-ratio pre-multiply on x — cross-camera-geometry invariance.",
+    "0.1": "Initial spec: pose + 2 hands (225 dims), shoulder-centered + shoulder-scaled."
+  }
+}

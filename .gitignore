@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Env & ML data
+.env
+.env.local
+# Corpora are large (200MB+) and re-downloadable, so they stay out —
+# but clips recorded in the app are irreplaceable and tiny (~1MB), and
+# they're the only in-domain data the project has. Those get versioned.
+ml/data/*
+!ml/data/user_clips/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Phase 18 · UI/UX skill (cloned reference, not project code — install via
+# `npx ui-ux-pro-max-cli init --ai claude` when needed for project-wide scope)
+.claude/skills/ui-ux-pro-max-skill/
+
+# ui-ux-pro-max installs its skill bundle into .claude/skills/ — design tooling,
+# not project code. Keep it out of the repo like the source clone above.
+.claude/skills/ui-ux-pro-max/
+.claude/skills/ui-styling/
+.claude/skills/design/
+.claude/skills/design-system/
+.claude/skills/brand/
+.claude/skills/slides/
+.claude/skills/banner-design/
+
+# throwaway output from `train.py --synth` smoke test
+ml/.synth_out/
+
+# npx-installed skill bundles (find-skills, frontend-design, accessibility).
+# Vendored third-party guidance — reinstall with `npx skills add`, don't commit.
+.agents/
+.claude/skills/find-skills
+.claude/skills/frontend-design
+.claude/skills/accessibility
+skills-lock.json
+
+# Private planning docs, kept out of this repo
+docs/

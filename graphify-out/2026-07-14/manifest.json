@@ -1,0 +1,252 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1784044347.4151764,
+    "ast_hash": "368f81ab4c3d61b223d135864ef6d521",
+    "semantic_hash": "368f81ab4c3d61b223d135864ef6d521"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1784050745.4388528,
+    "ast_hash": "23f2f10e8e591f67fd6eb9a21ef3341f",
+    "semantic_hash": ""
+  },
+  ".oxlintrc.json": {
+    "mtime": 1784042079.3218331,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": "029f4905006c1fffd96bc863e2d98d3e"
+  },
+  "ml/feature_spec.json": {
+    "mtime": 1784049905.789142,
+    "ast_hash": "8d60b5ea2eb652e68e0c052afafb0aa5",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1784043503.007188,
+    "ast_hash": "6acf9d80ce2f2366b1c54783d740b328",
+    "semantic_hash": "6acf9d80ce2f2366b1c54783d740b328"
+  },
+  "src/App.tsx": {
+    "mtime": 1784051703.9041908,
+    "ast_hash": "636cb5e401565efda017c010e3908957",
+    "semantic_hash": ""
+  },
+  "src/input/CameraSource.ts": {
+    "mtime": 1784052433.3564177,
+    "ast_hash": "c35216fc20ba83915fda4ca447c5d5b0",
+    "semantic_hash": ""
+  },
+  "src/input/InputSource.ts": {
+    "mtime": 1784042867.4507256,
+    "ast_hash": "76d59d2599fc49029735d9b07b7c6cd8",
+    "semantic_hash": "76d59d2599fc49029735d9b07b7c6cd8"
+  },
+  "src/main.tsx": {
+    "mtime": 1784042079.3253052,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "src/perception/normalize.ts": {
+    "mtime": 1784052387.4452348,
+    "ast_hash": "422050b2904b9e8d2cd1872b6d7e02e2",
+    "semantic_hash": ""
+  },
+  "src/state/store.ts": {
+    "mtime": 1784049914.3606927,
+    "ast_hash": "1aa20fcbe9d232f2e75aa8b644a9c367",
+    "semantic_hash": ""
+  },
+  "src/ui/CameraView.tsx": {
+    "mtime": 1784052534.107419,
+    "ast_hash": "8c422ab2020be5012a33e01f12e70a61",
+    "semantic_hash": ""
+  },
+  "src/ui/CaptureControls.tsx": {
+    "mtime": 1784047010.6978981,
+    "ast_hash": "41287ad486389a7dda957b966fcdb735",
+    "semantic_hash": ""
+  },
+  "tsconfig.app.json": {
+    "mtime": 1784042079.3215458,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a"
+  },
+  "tsconfig.json": {
+    "mtime": 1784042079.3239236,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1784042079.3209023,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": "f9cb81ddcea69ffdab672fc8c48dca66"
+  },
+  "vite.config.ts": {
+    "mtime": 1784042345.3363452,
+    "ast_hash": "5b641ab5f85eff4b0b9acec3417ca9b5",
+    "semantic_hash": "5b641ab5f85eff4b0b9acec3417ca9b5"
+  },
+  "ml/train.py": {
+    "mtime": 1784049885.7938628,
+    "ast_hash": "0bb5780933fa23e3c9df5445cb07fba6",
+    "semantic_hash": ""
+  },
+  "src/recognition/classifier.ts": {
+    "mtime": 1784045175.1908128,
+    "ast_hash": "da54864827371ab656d501955af8617c",
+    "semantic_hash": ""
+  },
+  "src/recognition/smoothing.ts": {
+    "mtime": 1784046463.5741067,
+    "ast_hash": "706d0d498538bb399bda315eaea4c2db",
+    "semantic_hash": ""
+  },
+  "src/recognition/useLiveLetter.ts": {
+    "mtime": 1784051631.381176,
+    "ast_hash": "cfe8be3547cc3c87a8efe67795763b84",
+    "semantic_hash": ""
+  },
+  "src/ui/LiveLetter.tsx": {
+    "mtime": 1784045301.3108003,
+    "ast_hash": "0d7aa82f5434e1c02b1a71bffd644610",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1784044347.4141111,
+    "ast_hash": "9b31786b637be3c13978bec4c2330752",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1784044347.4137208,
+    "ast_hash": "4c3f621c5b36560c2c5a0c303e2784cd",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1784044306.0369968,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1784044306.03712,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1784044306.0374675,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1784044306.043049,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1784044306.0431721,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1784044306.0433843,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1784044306.0434983,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1784044306.0436425,
+    "ast_hash": "c698309979460d0f02ba616417844399",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784044347.4148254,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784042518.4966028,
+    "ast_hash": "5384a0cdc6186170eb923c2403488794",
+    "semantic_hash": ""
+  },
+  "docs/AGENTS.md": {
+    "mtime": 1784040001.6238744,
+    "ast_hash": "f927a3308c9444d47dfc05aff78fa5dc",
+    "semantic_hash": ""
+  },
+  "docs/ARCHITECTURE.md": {
+    "mtime": 1784039862.427123,
+    "ast_hash": "caabbeb2e2e61fa8a9fe36ec617214e2",
+    "semantic_hash": ""
+  },
+  "docs/ML_PIPELINE.md": {
+    "mtime": 1784039908.3227966,
+    "ast_hash": "bd87245e031a78ab071bb044a02540d3",
+    "semantic_hash": ""
+  },
+  "docs/PRD.md": {
+    "mtime": 1784039802.8638937,
+    "ast_hash": "4846933796d52ad1d0197fe54c38ac02",
+    "semantic_hash": ""
+  },
+  "docs/README.md": {
+    "mtime": 1784039747.9030342,
+    "ast_hash": "72b3162397d536bef35fb9e27f174aca",
+    "semantic_hash": ""
+  },
+  "docs/ROADMAP.md": {
+    "mtime": 1784039961.4430933,
+    "ast_hash": "29875109915fd3442b4581cf99caec11",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1784042423.4665754,
+    "ast_hash": "0f72ce5fbfdbdb5ea2253c051f1d8ec6",
+    "semantic_hash": ""
+  },
+  "ml/capture/README.md": {
+    "mtime": 1784043734.6747656,
+    "ast_hash": "d4783c7555d6952e114050dbd3038a6d",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1784042079.3230624,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "ml/import_media.py": {
+    "mtime": 1784049965.9125435,
+    "ast_hash": "1fe5a69b54882da19320a516b2cf4f25",
+    "semantic_hash": ""
+  },
+  "public/models/fingerspell_asl/labels.json": {
+    "mtime": 1784051260.4167209,
+    "ast_hash": "e6efb5289cc180bd3edfbec298c862f5",
+    "semantic_hash": ""
+  },
+  "public/models/fingerspell_asl/model.json": {
+    "mtime": 1784051260.4163947,
+    "ast_hash": "2677f7d3d359781a7a995dbfdea6c2a8",
+    "semantic_hash": ""
+  },
+  "public/models/fingerspell_isl/labels.json": {
+    "mtime": 1784051407.057102,
+    "ast_hash": "e6efb5289cc180bd3edfbec298c862f5",
+    "semantic_hash": ""
+  },
+  "public/models/fingerspell_isl/model.json": {
+    "mtime": 1784051407.0565364,
+    "ast_hash": "fc28e0934f7bd4b022c8e08c108adc1e",
+    "semantic_hash": ""
+  },
+  "src/perception/hand.ts": {
+    "mtime": 1784052340.6611197,
+    "ast_hash": "0b6bc7836b25543006a5ee1b9b0ccb8a",
+    "semantic_hash": ""
+  },
+  "VULNERABILITIES.md": {
+    "mtime": 1784052614.8186283,
+    "ast_hash": "0a37d3b70162afa28965ad4616f3e683",
+    "semantic_hash": ""
+  }
+}

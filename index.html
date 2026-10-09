@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <meta name="theme-color" content="#14121f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Type system. Three faces, three jobs: Bricolage Grotesque sets display
+         headlines, Public Sans carries body copy, JetBrains Mono handles labels
+         and glosses. The mono isn't decorative — ASL is transcribed in caps in
+         linguistics (HELLO, THANK-YOU) and the app's own labels are glosses, so
+         the notation is borrowed from the subject rather than invented for it. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=JetBrains+Mono:wght@400;500;600&family=Public+Sans:wght@300..600&display=swap"
+      rel="stylesheet"
+    />
+    <title>SignSpeak: sign language, written down in your browser</title>
+    <meta name="description" content="A camera-based ASL recognizer. Fingerspell letters and word-signs into an editable transcript. No install, no sign-up." />
+    <meta property="og:title" content="SignSpeak" />
+    <meta property="og:description" content="Sign into a live transcript. In your browser." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SignSpeak" />
+    <!-- ponytail: relative og:image. Facebook resolves it against the page URL,
+         but the OG spec wants absolute and some crawlers (LinkedIn, Slack) are
+         stricter. There's no production domain in the repo yet, so this stays
+         relative — swap to https://<domain>/og-image.png at deploy time. -->
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SignSpeak wordmark beside a hand-landmark skeleton signing HELLO." />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

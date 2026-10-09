@@ -1,0 +1,1162 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap');
+
+/* Instrument variant. Every selector is scoped under .v-instrument.
+
+   One radius for the whole page: 3px (buttons, inputs, chips, panels alike).
+   One accent: signal orange. Fill #f0692b carries dark ink; as text it shifts
+   lighter on dark and darker on light so it clears AA in both.
+
+   Contrast (WCAG 2.x, measured with the relative-luminance formula):
+   dark   text   #e4e8eb on bg #111416   15.01:1
+          text-2 #a6aeb5 on bg           8.23:1
+          text-3 #8a939b on bg           5.92:1   (on panel #16191c 5.65:1)
+          accent-text #f5905a on bg      7.94:1   (on panel 7.58:1)
+          ink #111416 on accent #f0692b  5.95:1   (hover #f47c44 6.88:1)
+          text-2 on screen #22272b       6.71:1
+   light  text   #14171a on bg #e8ebed   15.02:1
+          text-2 #40474e on bg           7.87:1
+          text-3 #57606a on bg           5.34:1   (on panel #f3f5f6 5.84:1)
+          accent-text #ad430f on bg      4.89:1   (on panel 5.35:1)
+          ink #14171a on accent #f0692b  5.79:1   (hover #e25a1c 4.89:1)
+   Focus ring and selector mark (non-text, 3:1 min): dark #f5905a 7.94:1,
+   light #ad430f 4.89:1. The raw fill #f0692b is only 2.84:1 on the light
+   panel, so it never carries state on its own there.
+
+   The screen stays a dark graphite display in both themes, the way a light
+   instrument body carries a dark screen. The landmark palette (yellow left
+   hand, blue-violet right hand, slate pose, near-black halo) needs a mid-dark
+   ground: on #22272b yellow is 11.56:1, slate 5.88:1, and the violet relies on
+   its halo as it does over live video. */
+
+.v-instrument {
+  --vi-bg: #111416;
+  --vi-panel: #16191c;
+  --vi-screen: #22272b;
+  --vi-text: #e4e8eb;
+  --vi-text-2: #a6aeb5;
+  --vi-text-3: #8a939b;
+  --vi-line: rgba(228, 232, 235, 0.1);
+  --vi-line-strong: rgba(228, 232, 235, 0.2);
+  --vi-accent: #f0692b;
+  --vi-accent-hover: #f47c44;
+  --vi-accent-text: #f5905a;
+  --vi-on-accent: #111416;
+  --vi-focus: #f5905a;
+
+  --vi-sans: 'Archivo', 'Public Sans', system-ui, sans-serif;
+  --vi-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --vi-r: 3px;
+  --vi-ease: cubic-bezier(0.23, 1, 0.32, 1);
+
+  min-height: 100svh;
+  background: var(--vi-bg);
+  color: var(--vi-text);
+  font-family: var(--vi-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+:root[data-theme='light'] .v-instrument {
+  --vi-bg: #e8ebed;
+  --vi-panel: #f3f5f6;
+  --vi-screen: #22272b;
+  --vi-text: #14171a;
+  --vi-text-2: #40474e;
+  --vi-text-3: #57606a;
+  --vi-line: rgba(20, 23, 26, 0.12);
+  --vi-line-strong: rgba(20, 23, 26, 0.26);
+  --vi-accent: #f0692b;
+  --vi-accent-hover: #e25a1c;
+  --vi-accent-text: #ad430f;
+  --vi-on-accent: #14171a;
+  --vi-focus: #ad430f;
+}
+
+.v-instrument ::selection {
+  background: var(--vi-accent);
+  color: var(--vi-on-accent);
+}
+
+.v-instrument :focus-visible {
+  outline: 2px solid var(--vi-focus);
+  outline-offset: 2px;
+}
+.v-instrument main:focus {
+  outline: none;
+}
+
+.v-instrument a {
+  color: inherit;
+}
+
+/* ------------------------------------------------------------ primitives */
+
+.v-instrument .vi-wrap {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+@media (min-width: 768px) {
+  .v-instrument .vi-wrap {
+    padding-inline: 32px;
+  }
+}
+
+.v-instrument section {
+  scroll-margin-top: 72px;
+}
+
+.v-instrument .vi-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.v-instrument .vi-skip {
+  position: absolute;
+  left: 16px;
+  top: -64px;
+  z-index: 60;
+  padding: 10px 14px;
+  background: var(--vi-accent);
+  color: var(--vi-on-accent);
+  border-radius: var(--vi-r);
+  font-weight: 600;
+  text-decoration: none;
+}
+.v-instrument .vi-skip:focus {
+  top: 12px;
+}
+
+.v-instrument .vi-h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 1.5rem + 2vw, 3.125rem);
+  font-weight: 650;
+  font-stretch: 84%;
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+.v-instrument .vi-h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem);
+  font-weight: 620;
+  font-stretch: 90%;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+.v-instrument .vi-h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+.v-instrument .vi-body {
+  margin: 0;
+  color: var(--vi-text-2);
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+.v-instrument .vi-small {
+  font-size: 0.875rem;
+}
+.v-instrument .vi-dim {
+  color: var(--vi-text-2);
+}
+.v-instrument .vi-label {
+  margin: 0;
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--vi-text-3);
+  letter-spacing: 0.01em;
+}
+
+/* Buttons. The primary is the only filled orange on the page. */
+.v-instrument .vi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: var(--vi-r);
+  font-family: var(--vi-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 160ms var(--vi-ease),
+    transform 160ms var(--vi-ease);
+}
+.v-instrument .vi-btn--primary {
+  background: var(--vi-accent);
+  color: var(--vi-on-accent);
+}
+.v-instrument .vi-btn--primary:hover {
+  background: var(--vi-accent-hover);
+}
+.v-instrument .vi-btn--sm {
+  min-height: 34px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.v-instrument .vi-textlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-height: 44px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--vi-line-strong);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 160ms ease;
+}
+.v-instrument .vi-textlink:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Small mono hardware-style key: pause, replay. */
+.v-instrument .vi-mini {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: transparent;
+  color: var(--vi-text-2);
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms var(--vi-ease);
+}
+.v-instrument .vi-mini:hover {
+  color: var(--vi-text);
+  border-color: var(--vi-text-3);
+}
+.v-instrument .vi-mini[aria-pressed='true'] {
+  color: var(--vi-accent-text);
+  border-color: currentColor;
+}
+
+.v-instrument .vi-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+/* The dark display every SignPlayer sits on. */
+.v-instrument .vi-screen {
+  position: relative;
+  background: var(--vi-screen);
+  border-radius: var(--vi-r);
+  overflow: hidden;
+}
+.v-instrument .vi-screen-fallback {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+.v-instrument .vi-screen-fallback.is-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* ------------------------------------------------------------ header */
+
+.v-instrument .vi-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--vi-bg);
+  border-bottom: 1px solid var(--vi-line);
+}
+.v-instrument .vi-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+}
+.v-instrument .vi-wordmark {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  font-stretch: 85%;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+.v-instrument .vi-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+.v-instrument .vi-nav-link {
+  color: var(--vi-text-2);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+.v-instrument .vi-nav-link:hover {
+  color: var(--vi-text);
+}
+
+.v-instrument .vi-theme {
+  display: inline-flex;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  padding: 2px;
+  gap: 2px;
+}
+.v-instrument .vi-theme-opt {
+  min-height: 26px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--vi-text-3);
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+.v-instrument .vi-theme-opt:hover {
+  color: var(--vi-text);
+}
+.v-instrument .vi-theme-opt[aria-pressed='true'] {
+  background: var(--vi-text);
+  color: var(--vi-bg);
+}
+
+@media (max-width: 767px) {
+  .v-instrument .vi-hide-sm {
+    display: none;
+  }
+  .v-instrument .vi-nav {
+    gap: 14px;
+  }
+}
+
+/* ------------------------------------------------------------ hero */
+
+.v-instrument .vi-hero {
+  padding: 20px 0 72px;
+}
+.v-instrument .vi-panel {
+  display: grid;
+  grid-template-areas: 'copy' 'scope' 'ro';
+  background: var(--vi-panel);
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+}
+.v-instrument .vi-hero-copy {
+  grid-area: copy;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 20px 24px;
+}
+.v-instrument .vi-hero-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.v-instrument .vi-lede {
+  margin: 0;
+  max-width: 34ch;
+  font-size: 1.0625rem;
+  color: var(--vi-text-2);
+  text-wrap: pretty;
+}
+.v-instrument .vi-scope {
+  grid-area: scope;
+  margin: 0;
+  padding: 0 12px 16px 4px;
+}
+.v-instrument .vi-scope-grid {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  grid-template-rows: auto 22px;
+  grid-template-areas: 'y screen' '. x';
+}
+.v-instrument .vi-scope-grid > .vi-screen {
+  grid-area: screen;
+}
+/* Axis rulers: the landmark readouts below are in this 0..1 space, so the
+   rulers are what make those numbers mean a place on the screen. x is
+   reversed because the view is mirrored. */
+.v-instrument .vi-ruler-y,
+.v-instrument .vi-ruler-x {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--vi-mono);
+  font-size: 11px;
+  line-height: 1;
+  color: var(--vi-text-3);
+  font-variant-numeric: tabular-nums;
+}
+.v-instrument .vi-ruler-y {
+  grid-area: y;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 6px;
+}
+.v-instrument .vi-ruler-x {
+  grid-area: x;
+  align-items: flex-end;
+}
+
+.v-instrument .vi-readouts {
+  grid-area: ro;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--vi-line-strong);
+}
+.v-instrument .vi-ro {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 14px 16px 16px;
+}
+.v-instrument .vi-ro dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.v-instrument .vi-ro:nth-child(even) {
+  border-left: 1px solid var(--vi-line);
+}
+.v-instrument .vi-ro:nth-child(n + 3) {
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-ro-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: -4px;
+}
+.v-instrument .vi-ro-big {
+  font-family: var(--vi-mono);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  color: var(--vi-text);
+}
+.v-instrument .vi-ro-sub {
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  color: var(--vi-text-3);
+}
+.v-instrument .vi-seq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  color: var(--vi-text-3);
+}
+.v-instrument .vi-seq .is-on {
+  color: var(--vi-accent-text);
+}
+.v-instrument .vi-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  vertical-align: -1px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--vi-line-strong);
+}
+.v-instrument .vi-vec {
+  align-self: flex-start;
+  border-collapse: collapse;
+  font-family: var(--vi-mono);
+  font-size: 12.5px;
+  line-height: 1.55;
+  font-variant-numeric: tabular-nums;
+}
+.v-instrument .vi-vec th {
+  padding: 0 14px 0 0;
+  text-align: left;
+  font-weight: 400;
+  color: var(--vi-text-3);
+  white-space: nowrap;
+}
+.v-instrument .vi-vec td {
+  padding: 0 0 0 12px;
+  text-align: right;
+  color: var(--vi-text);
+}
+
+@media (max-width: 767px) {
+  .v-instrument .vi-ro--vec {
+    grid-column: 1 / -1;
+    border-left: 0 !important;
+  }
+  .v-instrument .vi-ro--gloss {
+    grid-column: 1 / -1;
+  }
+  .v-instrument .vi-ro:nth-child(2) {
+    border-left: 0;
+    border-top: 1px solid var(--vi-line);
+  }
+  .v-instrument .vi-ro:nth-child(3) {
+    border-left: 1px solid var(--vi-line);
+  }
+}
+
+@media (min-width: 768px) {
+  .v-instrument .vi-hero-copy {
+    padding: 36px 32px 28px;
+  }
+  .v-instrument .vi-scope {
+    padding: 0 24px 20px 12px;
+  }
+  .v-instrument .vi-readouts {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1.4fr);
+  }
+  .v-instrument .vi-ro {
+    padding: 16px 20px 18px;
+  }
+  .v-instrument .vi-ro + .vi-ro {
+    border-left: 1px solid var(--vi-line);
+  }
+  .v-instrument .vi-ro:nth-child(n + 3) {
+    border-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .v-instrument .vi-panel {
+    grid-template-columns: minmax(0, 1.55fr) minmax(340px, 1fr);
+    grid-template-areas: 'scope copy' 'ro ro';
+  }
+  .v-instrument .vi-scope {
+    padding: 24px 24px 18px 12px;
+  }
+  /* Size the screen from the viewport height so the whole panel, readouts
+     included, fits the first screen at common laptop heights. */
+  .v-instrument .vi-scope-grid {
+    width: min(100%, calc((100svh - 330px) * 4 / 3 + 30px));
+    min-width: 420px;
+    margin-inline: auto;
+  }
+  .v-instrument .vi-hero-copy {
+    justify-content: space-between;
+    padding: 40px 36px 32px;
+    border-left: 1px solid var(--vi-line);
+  }
+}
+
+/* ------------------------------------------------------------ speller */
+
+.v-instrument .vi-speller {
+  padding: 88px 0;
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-speller-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-areas: 'controls' 'tape' 'screen' 'status';
+}
+.v-instrument .vi-speller-display {
+  display: contents;
+}
+.v-instrument .vi-speller-controls {
+  grid-area: controls;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.v-instrument .vi-speller-grid > .vi-speller-display > .vi-screen,
+.v-instrument .vi-speller-display .vi-screen--square {
+  grid-area: screen;
+  width: 100%;
+  max-width: 420px;
+}
+.v-instrument .vi-speller-status {
+  grid-area: status;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 420px;
+  margin-top: -16px;
+}
+
+/* 14 positions, the input cap, always drawn: empty ones read as free slots. */
+.v-instrument .vi-tape {
+  grid-area: tape;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: var(--vi-panel);
+  overflow: hidden;
+}
+.v-instrument .vi-tape-cell {
+  display: grid;
+  place-items: center;
+  height: clamp(44px, 3rem + 3vw, 96px);
+  font-family: var(--vi-mono);
+  font-size: clamp(0.95rem, 0.55rem + 2.2vw, 2.5rem);
+  font-weight: 600;
+  color: var(--vi-text-3);
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+.v-instrument .vi-tape-cell + .vi-tape-cell {
+  border-left: 1px solid var(--vi-line);
+}
+.v-instrument .vi-tape-cell.is-past {
+  color: var(--vi-text);
+}
+.v-instrument .vi-tape-cell.is-on {
+  background: var(--vi-accent);
+  color: var(--vi-on-accent);
+}
+
+.v-instrument .vi-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 480px;
+}
+.v-instrument .vi-field-label {
+  font-weight: 600;
+  font-size: 15px;
+}
+.v-instrument .vi-field-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
+.v-instrument .vi-input {
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: var(--vi-panel);
+  color: var(--vi-text);
+  font-family: var(--vi-mono);
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.v-instrument .vi-input::placeholder {
+  color: var(--vi-text-3);
+  opacity: 1;
+}
+.v-instrument .vi-input:focus-visible {
+  outline-offset: 0;
+  border-color: var(--vi-focus);
+}
+.v-instrument .vi-field .vi-btn {
+  min-height: 48px;
+}
+.v-instrument .vi-help {
+  margin: 0;
+  font-size: 14px;
+  color: var(--vi-text-3);
+}
+.v-instrument .vi-note {
+  margin: 0;
+  max-width: 44ch;
+  padding-left: 14px;
+  border-left: 2px solid var(--vi-line-strong);
+  font-size: 14px;
+  color: var(--vi-text-2);
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+/* Lights up while J or Z is the letter on screen. */
+.v-instrument .vi-note.is-on {
+  border-left-color: var(--vi-accent-text);
+  color: var(--vi-text);
+}
+
+@media (min-width: 900px) {
+  .v-instrument .vi-speller {
+    padding: 112px 0;
+  }
+  .v-instrument .vi-speller-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+    grid-template-areas: 'tape tape' 'controls screen' 'controls status';
+    gap: 32px 72px;
+  }
+  .v-instrument .vi-speller-controls {
+    padding-top: 8px;
+  }
+}
+
+/* ------------------------------------------------------------ how */
+
+.v-instrument .vi-how {
+  padding: 88px 0;
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-chain {
+  list-style: none;
+  margin: 48px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+.v-instrument .vi-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0 28px 28px;
+  border-left: 1px solid var(--vi-line-strong);
+}
+.v-instrument .vi-stage-io {
+  position: absolute;
+  left: -9px;
+  top: 18px;
+  width: 17px;
+  text-align: center;
+  background: var(--vi-bg);
+  font-family: var(--vi-mono);
+  font-size: 17px;
+  line-height: 1.4;
+  color: var(--vi-accent-text);
+  transform: rotate(90deg);
+}
+.v-instrument .vi-stage:first-child .vi-stage-io {
+  transform: none;
+  font-size: 11px;
+}
+.v-instrument .vi-formula {
+  margin: 4px 0 0;
+  font-family: var(--vi-mono);
+  font-size: 13px;
+  color: var(--vi-text-3);
+}
+.v-instrument .vi-formula b {
+  color: var(--vi-text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (min-width: 900px) {
+  .v-instrument .vi-how {
+    padding: 112px 0;
+  }
+  .v-instrument .vi-chain {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 64px;
+    border-top: 1px solid var(--vi-line-strong);
+  }
+  .v-instrument .vi-stage {
+    padding: 36px 28px 0 0;
+    border-left: 0;
+  }
+  .v-instrument .vi-stage-io,
+  .v-instrument .vi-stage:first-child .vi-stage-io {
+    left: 0;
+    top: -13px;
+    width: auto;
+    padding-right: 8px;
+    text-align: left;
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------ honesty */
+
+.v-instrument .vi-honest {
+  padding: 88px 0;
+  background: var(--vi-panel);
+  border-top: 1px solid var(--vi-line);
+  border-bottom: 1px solid var(--vi-line);
+}
+.v-instrument .vi-measure {
+  margin-top: 16px;
+}
+.v-instrument .vi-cal {
+  display: grid;
+  margin-top: 48px;
+  border-top: 1px solid var(--vi-line-strong);
+}
+.v-instrument .vi-cal-main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 0 32px;
+}
+.v-instrument .vi-cal-main + .vi-cal-main,
+.v-instrument .vi-cal-aside {
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-status {
+  align-self: flex-start;
+  margin: 0;
+  padding: 3px 8px;
+  border: 1px solid currentColor;
+  border-radius: var(--vi-r);
+  font-family: var(--vi-mono);
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--vi-text);
+}
+.v-instrument .vi-status--early {
+  color: var(--vi-accent-text);
+}
+.v-instrument .vi-figure {
+  margin: 4px 0 0;
+  font-size: clamp(3.75rem, 2.2rem + 5vw, 6.5rem);
+  font-weight: 650;
+  font-stretch: 72%;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.v-instrument .vi-cal-aside {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 28px 0 8px;
+}
+.v-instrument .vi-spec-n {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 650;
+  font-stretch: 75%;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.v-instrument .vi-spec-l {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--vi-text-2);
+}
+
+.v-instrument .vi-privacy {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--vi-line-strong);
+  display: grid;
+  gap: 20px;
+}
+.v-instrument .vi-privacy .vi-h3 {
+  font-size: 1.375rem;
+  font-stretch: 92%;
+}
+.v-instrument .vi-privacy-cols {
+  display: grid;
+  gap: 20px;
+}
+.v-instrument .vi-privacy-cols > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (max-width: 559px) {
+  .v-instrument .vi-cal-aside {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  .v-instrument .vi-honest {
+    padding: 112px 0;
+  }
+  .v-instrument .vi-cal {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+  .v-instrument .vi-cal-main {
+    padding: 36px 40px 8px 0;
+  }
+  .v-instrument .vi-cal-main + .vi-cal-main,
+  .v-instrument .vi-cal-aside {
+    border-top: 0;
+    border-left: 1px solid var(--vi-line);
+    padding-left: 40px;
+  }
+  .v-instrument .vi-cal-aside {
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 32px;
+    padding-top: 36px;
+    padding-right: 0;
+  }
+  .v-instrument .vi-privacy {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 40px;
+  }
+  .v-instrument .vi-privacy-cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* ------------------------------------------------------------ modes */
+
+.v-instrument .vi-modes {
+  padding: 88px 0;
+}
+.v-instrument .vi-modes-grid {
+  display: grid;
+  gap: 32px;
+}
+.v-instrument .vi-selector {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  max-width: 360px;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+}
+.v-instrument .vi-selector-opt {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 0;
+  background: transparent;
+  color: var(--vi-text-2);
+  font-family: var(--vi-sans);
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+.v-instrument .vi-selector-opt + .vi-selector-opt {
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-selector-opt:hover {
+  color: var(--vi-text);
+}
+.v-instrument .vi-selector-opt:focus-visible {
+  outline-offset: -2px;
+}
+/* The position mark is state, not decoration: it shows which detent the
+   selector is in. */
+.v-instrument .vi-selector-pos {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--vi-text-3);
+  border-radius: 2px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+.v-instrument .vi-selector-opt[aria-selected='true'] {
+  color: var(--vi-text);
+  background: var(--vi-panel);
+}
+.v-instrument .vi-selector-opt[aria-selected='true'] .vi-selector-pos {
+  background: var(--vi-accent-text);
+  border-color: var(--vi-accent-text);
+}
+
+.v-instrument .vi-mode-panel {
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: var(--vi-panel);
+  padding: 28px 24px;
+}
+.v-instrument .vi-mode-panel:focus-visible {
+  outline-offset: 3px;
+}
+.v-instrument .vi-mode-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: vi-in 220ms var(--vi-ease) both;
+}
+.v-instrument .vi-mode-name {
+  font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2rem);
+  font-weight: 620;
+  font-stretch: 90%;
+  letter-spacing: -0.015em;
+}
+.v-instrument .vi-mode-text {
+  font-size: 1.0625rem;
+  margin-bottom: 12px;
+}
+.v-instrument .vi-gloss-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -6px 0 0;
+}
+.v-instrument .vi-gloss-line span {
+  padding: 6px 10px;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: var(--vi-bg);
+  font-family: var(--vi-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+@keyframes vi-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .v-instrument .vi-modes {
+    padding: 112px 0;
+  }
+  .v-instrument .vi-modes-grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 72px;
+    align-items: end;
+  }
+  .v-instrument .vi-mode-panel {
+    padding: 40px 44px;
+    min-height: 300px;
+  }
+}
+
+/* ------------------------------------------------------------ close + footer */
+
+.v-instrument .vi-close {
+  padding: 96px 0 104px;
+  border-top: 1px solid var(--vi-line);
+}
+.v-instrument .vi-close-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.v-instrument .vi-close-title {
+  font-size: clamp(2.5rem, 1.3rem + 4.2vw, 5rem);
+  max-width: 14ch;
+}
+.v-instrument .vi-close-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.v-instrument .vi-close-side .vi-body {
+  max-width: 52ch;
+}
+
+.v-instrument .vi-footer {
+  padding: 36px 0 72px;
+  border-top: 1px solid var(--vi-line);
+  font-size: 14px;
+  color: var(--vi-text-3);
+}
+.v-instrument .vi-footer-grid {
+  display: grid;
+  gap: 16px;
+}
+.v-instrument .vi-footer .vi-wordmark {
+  color: var(--vi-text);
+}
+.v-instrument .vi-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.v-instrument .vi-footer a {
+  color: var(--vi-text-2);
+  text-decoration: underline;
+  text-decoration-color: var(--vi-line-strong);
+  text-underline-offset: 3px;
+}
+.v-instrument .vi-footer a:hover {
+  color: var(--vi-text);
+}
+.v-instrument .vi-footer-links a {
+  text-decoration: none;
+}
+.v-instrument .vi-credits {
+  margin: 0;
+  max-width: 70ch;
+}
+
+@media (min-width: 900px) {
+  .v-instrument .vi-close {
+    padding: 136px 0 144px;
+  }
+  .v-instrument .vi-footer-grid {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    gap: 40px;
+    align-items: baseline;
+  }
+  .v-instrument .vi-credits {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+.v-instrument .vi-resume {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 45;
+  padding: 10px 14px;
+  border: 1px solid var(--vi-line-strong);
+  border-radius: var(--vi-r);
+  background: var(--vi-panel);
+  color: var(--vi-text);
+  font-family: var(--vi-mono);
+  font-size: 13px;
+  text-decoration: none;
+}
+.v-instrument .vi-resume:hover {
+  border-color: var(--vi-accent);
+}
+
+/* ------------------------------------------------------------ reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .v-instrument .vi-mode-body {
+    animation: none;
+  }
+  .v-instrument .vi-btn,
+  .v-instrument .vi-mini,
+  .v-instrument .vi-tape-cell,
+  .v-instrument .vi-selector-opt,
+  .v-instrument .vi-selector-pos {
+    transition: none;
+  }
+}

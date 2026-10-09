@@ -1,0 +1,17 @@
+{
+  "name": "SignSpeak",
+  "short_name": "SignSpeak",
+  "description": "Sign language fingerspelling and word-signs into an editable transcript.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

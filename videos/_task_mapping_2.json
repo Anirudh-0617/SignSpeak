@@ -1,0 +1,17 @@
+{
+  "provider_task_id": "449508683727327",
+  "submitted_model": "MiniMax-H3",
+  "output_file_path": "/Users/anirudh/Documents/101/videos/449508683727327.mp4",
+  "submitted_at_ms": 1791296402530,
+  "last_query_at_ms": 1791308414000,
+  "next_query_due_at_ms": 1791297002530,
+  "terminal_status": "succeeded",
+  "polling_cron_task_id": "b4183997-c25e-469a-87d5-91e91b1cc109",
+  "polling_cron_name": "video-result-449508683727327",
+  "scheduler_host": "desktop",
+  "owning_conversation": "mvs_607716a93e9b40c3a6ef8715554516f9",
+  "cleanup_state": "done",
+  "cleanup_attempts": {"delete": 1, "disable": 0, "reconcile": 0},
+  "submission_attempted": true,
+  "request_fingerprint": "signspeak-3-moments-9x16-2k-10s"
+}

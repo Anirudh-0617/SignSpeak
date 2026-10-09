@@ -1,0 +1,294 @@
+{
+  "communities": {
+    "0": [
+      "ref_dom",
+      "ref_src",
+      "ref_vite_client",
+      "tsconfig_app",
+      "tsconfig_app_compileroptions",
+      "tsconfig_app_compileroptions_allowarbitraryextensions",
+      "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "tsconfig_app_compileroptions_jsx",
+      "tsconfig_app_compileroptions_lib",
+      "tsconfig_app_compileroptions_module",
+      "tsconfig_app_compileroptions_moduledetection",
+      "tsconfig_app_compileroptions_moduleresolution",
+      "tsconfig_app_compileroptions_noemit",
+      "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_app_compileroptions_nounusedlocals",
+      "tsconfig_app_compileroptions_nounusedparameters",
+      "tsconfig_app_compileroptions_skiplibcheck",
+      "tsconfig_app_compileroptions_target",
+      "tsconfig_app_compileroptions_tsbuildinfofile",
+      "tsconfig_app_compileroptions_types",
+      "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "tsconfig_app_include",
+      "tsconfig_app_json_ref_es2023"
+    ],
+    "1": [
+      "oxlint",
+      "package_devdependencies",
+      "package_devdependencies_oxlint",
+      "package_devdependencies_prettier",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_vite",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "prettier",
+      "tailwindcss",
+      "tailwindcss_vite",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "2": [
+      "mediapipe_tasks_vision",
+      "package",
+      "package_dependencies",
+      "package_dependencies_mediapipe_tasks_vision",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_zustand",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_format",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_type",
+      "package_version",
+      "react",
+      "react_dom",
+      "zustand"
+    ],
+    "3": [
+      "ref_node",
+      "ref_vite_config_ts",
+      "tsconfig_node",
+      "tsconfig_node_compileroptions",
+      "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "tsconfig_node_compileroptions_lib",
+      "tsconfig_node_compileroptions_module",
+      "tsconfig_node_compileroptions_moduledetection",
+      "tsconfig_node_compileroptions_noemit",
+      "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_node_compileroptions_nounusedlocals",
+      "tsconfig_node_compileroptions_nounusedparameters",
+      "tsconfig_node_compileroptions_skiplibcheck",
+      "tsconfig_node_compileroptions_target",
+      "tsconfig_node_compileroptions_tsbuildinfofile",
+      "tsconfig_node_compileroptions_types",
+      "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "tsconfig_node_include",
+      "tsconfig_node_json_ref_es2023"
+    ],
+    "4": [
+      "src_input_camerasource",
+      "src_input_camerasource_framecb",
+      "src_input_camerasource_rawcb",
+      "src_input_inputsource",
+      "src_input_inputsource_featureframe",
+      "src_input_inputsource_inputsource",
+      "src_input_inputsource_inputsource_onframe",
+      "src_input_inputsource_inputsource_start",
+      "src_input_inputsource_inputsource_stop",
+      "src_perception_holistic",
+      "src_perception_holistic_createholistic",
+      "src_perception_holistic_holisticresult",
+      "src_perception_normalize",
+      "src_perception_normalize_normalize",
+      "src_ui_cameraview"
+    ],
+    "5": [
+      "src_app",
+      "src_app_app",
+      "src_main",
+      "src_state_store",
+      "src_state_store_sample",
+      "src_state_store_state",
+      "src_state_store_usestore",
+      "src_ui_capturecontrols",
+      "src_ui_capturecontrols_capturecontrols",
+      "src_ui_capturecontrols_download",
+      "src_ui_capturecontrols_letters"
+    ],
+    "6": [
+      "oxlintrc",
+      "oxlintrc_plugins",
+      "oxlintrc_rules",
+      "oxlintrc_rules_react_only_export_components",
+      "oxlintrc_rules_react_rules_of_hooks",
+      "oxlintrc_schema",
+      "ref_oxc",
+      "ref_react",
+      "ref_typescript",
+      "ref_warn"
+    ],
+    "7": [
+      "src_input_camerasource_camerasource",
+      "src_input_camerasource_camerasource_constructor",
+      "src_input_camerasource_camerasource_loop",
+      "src_input_camerasource_camerasource_onframe",
+      "src_input_camerasource_camerasource_onraw",
+      "src_input_camerasource_camerasource_start",
+      "src_input_camerasource_camerasource_stop",
+      "src_input_camerasource_camerasource_teardown",
+      "src_ui_cameraview_cameraview"
+    ],
+    "8": [
+      "tsconfig",
+      "tsconfig_files",
+      "tsconfig_references"
+    ],
+    "9": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08333333333333333,
+    "1": 0.09523809523809523,
+    "2": 0.1,
+    "3": 0.1,
+    "4": 0.21904761904761905,
+    "5": 0.34545454545454546,
+    "6": 0.2,
+    "7": 0.3888888888888889,
+    "8": 0.6666666666666666,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "src_input_camerasource_camerasource",
+      "label": "CameraSource",
+      "degree": 10
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "src_input_inputsource_inputsource",
+      "label": "InputSource",
+      "degree": 6
+    },
+    {
+      "id": "src_ui_cameraview_cameraview",
+      "label": "CameraView()",
+      "degree": 6
+    },
+    {
+      "id": "src_state_store_usestore",
+      "label": "useStore",
+      "degree": 5
+    },
+    {
+      "id": "oxlintrc_plugins",
+      "label": "plugins",
+      "degree": 4
+    },
+    {
+      "id": "src_input_inputsource_featureframe",
+      "label": "FeatureFrame",
+      "degree": 4
+    },
+    {
+      "id": "src_ui_capturecontrols_capturecontrols",
+      "label": "CaptureControls()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "CameraSource",
+      "target": "InputSource",
+      "source_files": [
+        "src/input/CameraSource.ts",
+        "src/input/InputSource.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "App()",
+      "target": "useStore",
+      "source_files": [
+        "src/App.tsx",
+        "src/state/store.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "CaptureControls()",
+      "target": "useStore",
+      "source_files": [
+        "src/ui/CaptureControls.tsx",
+        "src/state/store.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.066) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `plugins` to `CameraSource.ts`, `App.tsx`?",
+      "why": "High betweenness centrality (0.037) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `$schema`, `typescript`, `oxc` to the rest of the system?",
+      "why": "68 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

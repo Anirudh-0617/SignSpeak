@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* Gloss tokens as Tailwind utilities (text-ink, bg-plate, border-rule, bg-mark…).
+   `inline` makes each utility emit var(--g-*) directly, so the value resolves
+   at the element and flips with the .v-gloss light/dark branches in gloss.css.
+   Only meaningful under a .v-gloss ancestor, which is every page now. */
+@theme inline {
+  --color-page: var(--g-bg);
+  --color-plate: var(--g-plate);
+  --color-ink: var(--g-text);
+  --color-ink-2: var(--g-text-2);
+  --color-ink-3: var(--g-text-3);
+  --color-rule: var(--g-rule);
+  --color-rule-strong: var(--g-rule-strong);
+  --color-mark: var(--g-mark);
+  --color-on-mark: var(--g-on-mark);
+  --color-inverse: var(--g-inverse-bg);
+  --color-on-inverse: var(--g-inverse-text);
+  --color-danger: var(--g-danger);
+}
+
+/* Type roles. Theme is set on <html data-theme="light|dark"> by useTheme(). */
+:root {
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-gloss: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--g-bg);
+  color: var(--g-text);
+}
+
+/* Display face, used with restraint: headlines and figures only. */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------------------
+   Gloss tokens. Graphite neutrals (hue ~210, low chroma) and one accent, the
+   landmark yellow, used only as a highlighter fill. Dark is the default
+   branch; <html data-theme="light"> flips it. Ratios are WCAG relative
+   luminance. Component classes live in src/ui/gloss.css.
+   --------------------------------------------------------------------------- */
+:root {
+  --g-bg: #16181b;
+  --g-plate: #0e1012;        /* figure stage, a step below the page */
+  --g-text: #eceef0;         /* 15.29:1 on bg */
+  --g-text-2: #aab0b7;       /* 8.13:1 on bg */
+  --g-text-3: #8d939b;       /* 5.74:1 on bg, 6.15:1 on plate */
+  --g-rule: rgba(236, 238, 240, 0.12);
+  --g-rule-strong: rgba(236, 238, 240, 0.28);
+  --g-mark: #ffe066;         /* highlighter fill */
+  --g-on-mark: #16181b;      /* 13.64:1 on mark */
+  --g-inverse-bg: #eceef0;   /* primary button fill */
+  --g-inverse-text: #16181b; /* 15.29:1 on inverse-bg */
+  --g-focus: #ffe066;        /* 13.64:1 against bg */
+  --g-danger: #ff8a7a;       /* 7.77:1 on bg, 8.32:1 on plate. Errors only. */
+  /* Landmark legibility on the dark plate: right hand #5b3df5 3.11:1,
+     left hand #ffe066 14.62:1, pose #94a3b8 7.44:1 (graphics floor is 3:1). */
+
+  --g-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --g-ease-mark: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root[data-theme="light"] {
+  --g-bg: #eceef1;
+  --g-plate: #f8f9fa;        /* paper plate, a step above the page */
+  --g-text: #15171a;         /* 15.45:1 on bg */
+  --g-text-2: #454a51;       /* 7.68:1 on bg */
+  --g-text-3: #5b6168;       /* 5.39:1 on bg, 5.94:1 on plate */
+  --g-rule: rgba(21, 23, 26, 0.12);
+  --g-rule-strong: rgba(21, 23, 26, 0.3);
+  --g-mark: #ffd84a;         /* slightly deeper yellow so the fill reads on light ground */
+  --g-on-mark: #15171a;      /* 12.98:1 on mark */
+  --g-inverse-bg: #15171a;
+  --g-inverse-text: #eceef1; /* 15.45:1 */
+  --g-focus: #15171a;        /* 15.45:1 */
+  --g-danger: #b42318;       /* 5.66:1 on bg, 6.24:1 on plate */
+  /* On the light plate every landmark stroke carries its near-black halo
+     (18.75:1), and right hand #5b3df5 itself is 5.81:1. */
+}

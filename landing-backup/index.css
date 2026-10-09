@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+/* Phase 16 motion: single keyframe used via animate-[fadeIn_150ms_ease-out].
+   All usages are motion-safe: gated. */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Phase 17 v3 · landing entrance fade. Pure CSS, no framer-motion. Staggered
+   via delay classes below. Respects reduced-motion. */
+@keyframes fadeInSlow {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInSlow 0.6s ease-out forwards;
+}
+.fade-in-delay-1 { animation-delay: 0.1s; }
+.fade-in-delay-2 { animation-delay: 0.2s; }
+.fade-in-delay-3 { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .fade-in-delay-1, .fade-in-delay-2, .fade-in-delay-3 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Theme · universal, set on <html data-theme="light|dark"> by useTheme().
+
+   Two layers:
+     1. --l-* semantic vars, consumed by landing + login.
+     2. A remap of Tailwind's own --color-* tokens, which flips /app.
+
+   Layer 2 is the reason /app needs no component edits: Tailwind v4 emits every
+   colour utility as `background-color: var(--color-neutral-950)` etc., so
+   overriding those vars under a selector re-skins all ~15 app components at
+   once. The app is authored dark-first, so only the light branch overrides.
+   --------------------------------------------------------------------------- */
+
+/* Type roles. Set here so /app inherits body copy without touching a component,
+   the same lever the Tailwind palette remap below uses. */
+:root {
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-gloss: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* Display face, used with restraint — headlines and figures only. */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Gloss notation: how ASL is written down in linguistics, and how the app
+   already labels its own classes. Carries eyebrows, labels and data. */
+.gloss {
+  font-family: var(--font-gloss);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+}
+
+.tnum {
+  font-family: var(--font-gloss);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dark = the authored baseline for /app; landing vars mirror it.
+   Violet-biased rather than neutral: the ground is tinted toward the same hue
+   family as the landmark overlay, so nothing reads as off-the-shelf grey. */
+:root {
+  --l-bg: #14121f;
+  --l-surface: #1d1a2c;
+  --l-text: #edeaf7;        /* 15.59:1 */
+  --l-text-2: #a9a2c4;      /* 7.62:1  */
+  --l-text-3: #847ca3;      /* 4.75:1  */
+  --l-border: rgba(237, 234, 247, 0.10);
+  --l-border-strong: rgba(237, 234, 247, 0.20);
+  --l-accent: #a78bfa;      /* 6.79:1  */
+  --l-accent-2: #f0abfc;
+  --l-inset-bg: #0b0a12;
+  --l-inset-border: rgba(237, 234, 247, 0.12);
+}
+
+/* Dark-branch Tailwind remap. /app was authored on Tailwind's stock neutral
+   scale (a true grey), which left it visibly colder than the landing once the
+   landing went violet. Remapping the same tokens pulls /app onto the identity
+   with no component edits — the lever the light branch already used. */
+:root:not([data-theme="light"]) {
+  --color-neutral-950: #14121f;
+  --color-neutral-900: #1d1a2c;
+  --color-neutral-800: #2b2740;
+  --color-neutral-700: #3a3553;
+  /* The whole muted end is shifted a step brighter than a stock scale would
+     put it: neutral-600 carries the app footer, so the *faintest* step still
+     has to clear 4.5, not just the one above it. */
+  --color-neutral-600: #847ca3;  /* 4.75:1 */
+  --color-neutral-500: #938bb3;  /* 5.80:1 */
+  --color-neutral-400: #b3acca;  /* 8.51:1 */
+  --color-neutral-300: #c9c3de;
+  --color-neutral-200: #ddd8ec;
+  --color-neutral-100: #edeaf7;
+  --color-neutral-50:  #ffffff;
+
+  /* Emerald was the app accent. Remapped to the violet family so the app and
+     the landing share one accent instead of running green against violet. */
+  --color-emerald-950: #241e3d;
+  --color-emerald-900: #2e2650;
+  --color-emerald-800: #4c3f86;
+  --color-emerald-700: #6d5ab8;
+  --color-emerald-500: #8b5cf6;
+  --color-emerald-400: #a78bfa;
+  --color-emerald-300: #c4b5fd;
+  --color-emerald-200: #ddd6fe;
+  --color-emerald-100: #ede9fe;
+}
+
+:root[data-theme="light"] {
+  --l-bg: #f2f0fa;
+  --l-surface: #ffffff;
+  --l-text: #171426;        /* 15.99:1 */
+  --l-text-2: #4a4560;      /* 8.06:1  */
+  /* 4.68:1 on --l-bg — this var carries stats sub-labels, section kickers and
+     the footer, all small type, so it has to clear the 4.5 AA floor. */
+  --l-text-3: #6e6885;
+  --l-border: rgba(23, 20, 38, 0.10);
+  --l-border-strong: rgba(23, 20, 38, 0.20);
+  --l-accent: #4f2fe0;      /* 6.61:1 */
+  --l-accent-2: #c026d3;
+  --l-inset-bg: #0b0a12;   /* canvas stays dark — landmarks need a dark stage */
+  --l-inset-border: rgba(23, 20, 38, 0.12);
+
+  /* --- Tailwind palette remap: inverts the scale so dark-first utilities read
+     correctly on a light page. Neutrals are violet-biased to match --l-bg. --- */
+  --color-neutral-950: #f2f0fa;  /* page background */
+  --color-neutral-900: #ffffff;  /* panels / elevated surfaces */
+  --color-neutral-800: #e2dff0;  /* hairline borders */
+  --color-neutral-700: #cdc8e2;  /* stronger borders */
+  /* Same shift as the dark branch — the faintest step still clears 4.5. */
+  --color-neutral-600: #6e6885;  /* faintest text — 4.68:1 */
+  --color-neutral-500: #5f5977;  /* muted text — 5.85:1 */
+  --color-neutral-400: #4a4560;  /* secondary text — 8.06:1 */
+  --color-neutral-300: #322e45;  /* body text */
+  --color-neutral-200: #221f31;
+  --color-neutral-100: #171426;  /* primary text */
+  --color-neutral-50:  #000000;
+
+  /* Emerald → violet, matching the dark branch. */
+  --color-emerald-950: #f3f0ff;
+  --color-emerald-900: #e9e3ff;
+  --color-emerald-800: #c4b5fd;
+  --color-emerald-700: #a78bfa;
+  --color-emerald-500: #6d28d9;  /* bar fills + focus rings */
+  --color-emerald-400: #5b21b6;
+  --color-emerald-300: #5b21b6;
+  --color-emerald-200: #4c1d95;
+  --color-emerald-100: #3b0764;
+
+  /* Amber = hints/warnings. */
+  --color-amber-950: #fffbeb;
+  --color-amber-300: #b45309;
+  --color-amber-200: #92400e;
+
+  /* Red = errors. */
+  --color-red-950: #fef2f2;
+  --color-red-900: #fee2e2;
+  --color-red-600: #dc2626;
+  --color-red-500: #dc2626;
+  --color-red-400: #b91c1c;
+  --color-red-300: #991b1b;
+  --color-red-200: #7f1d1d;
+
+  /* Cyan = blendshape readout, drawn over the video feed. */
+  --color-cyan-200: #0e7490;
+}
+
+/* ---------------------------------------------------------------------------
+   Gradient text sweep on hover.
+
+   The gradient is mostly `currentColor` with a coloured band parked off-screen,
+   so at rest the text is indistinguishable from normal — no layout shift, no
+   colour change until hover. currentColor means it inherits whatever the
+   element's colour already is, so it works in both themes with no variants.
+   --------------------------------------------------------------------------- */
+.grad-hover {
+  background-image: linear-gradient(
+    100deg,
+    currentColor 0%,
+    currentColor 38%,
+    var(--l-accent) 48%,
+    var(--l-accent-2) 58%,
+    currentColor 68%,
+    currentColor 100%
+  );
+  background-size: 280% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.grad-hover:hover,
+.grad-hover:focus-visible {
+  background-position: 0 0;
+}
+
+/* -webkit-text-fill-color inherits. A differently-coloured child inside a
+   .grad-hover element would go transparent while having no gradient of its
+   own — i.e. invisible. Reset children to paint normally. */
+.grad-hover > * {
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Without background-clip:text the fill would render the text invisible. */
+@supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+  .grad-hover { -webkit-text-fill-color: currentColor; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grad-hover { transition: none; }
+}
