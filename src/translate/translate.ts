@@ -1,6 +1,6 @@
-// NVIDIA free-tier LLM call. Vite dev proxy (see vite.config.ts) injects the
-// Authorization header so the API key never enters the client bundle.
-// ponytail: dev-only setup. Production must proxy through a real backend.
+// NVIDIA free-tier LLM call. The Vite dev proxy (vite.config.ts) and, in
+// production, the Vercel function (api/nvidia/v1/chat/completions.ts) inject
+// the Authorization header so the API key never enters the client bundle.
 const ENDPOINT = '/api/nvidia/v1/chat/completions';
 // nemotron-mini-4b-instruct reached EOL 2026-08-26 (410 Gone).
 const MODEL = 'nvidia/nemotron-3-ultra-550b-a55b';

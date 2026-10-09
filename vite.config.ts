@@ -5,19 +5,19 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
+  // NVIDIA_API_KEY matches the Vercel env var; VITE_ name kept for old .env files.
+  const nvidiaKey = env.NVIDIA_API_KEY || env.VITE_NVIDIA_API_KEY
   return {
     plugins: [react(), tailwindcss()],
     server: {
-      // ponytail: proxy /api/nvidia → NVIDIA in dev only, so VITE_NVIDIA_API_KEY
-      // never enters the client bundle. Production needs a real backend.
+      // Dev-only proxy /api/nvidia → NVIDIA so the key never enters the client
+      // bundle. Production uses the Vercel function in api/nvidia/.
       proxy: {
         '/api/nvidia': {
           target: 'https://integrate.api.nvidia.com',
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/api\/nvidia/, ''),
-          headers: env.VITE_NVIDIA_API_KEY
-            ? { Authorization: `Bearer ${env.VITE_NVIDIA_API_KEY}` }
-            : {},
+          headers: nvidiaKey ? { Authorization: `Bearer ${nvidiaKey}` } : {},
         },
       },
     },
