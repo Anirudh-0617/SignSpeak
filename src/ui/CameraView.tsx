@@ -56,6 +56,10 @@ function CameraViewImpl({
   // The stage takes the stream's real shape: 4:3 on laptops, 3:4 on a phone
   // held upright. A fixed 4:3 box with object-cover cropped hands off the top.
   const [aspect, setAspect] = useState(4 / 3);
+  // Loading reminder: the landmark models take a few seconds (longer on a
+  // phone), and signing into a camera that isn't tracking yet just looks
+  // broken. 'loading' until the first tracked frame, then a short 'ready'.
+  const [tracking, setTracking] = useState<'loading' | 'ready' | 'hidden'>('loading');
 
   // ponytail: mirror onFrame into a ref so identity churn upstream (e.g. state
   // updates every predicted frame) doesn't restart the camera.
@@ -98,6 +102,8 @@ function CameraViewImpl({
     let last = performance.now();
     let ema = 0;
     let lastFpsAt = 0;
+    let seenFirstFrame = false;
+    let readyTimer = 0;
     // ponytail: throttle blendshape state to 5 Hz — labels barely change faster
     // than that and 30 Hz setState is wasted renders on a 3-row chip strip.
     let lastBlendshapeAt = 0;
@@ -148,6 +154,11 @@ function CameraViewImpl({
 
     // Single per-frame draw: clear → face dots (cached) → hands on top.
     source.onRaw((result) => {
+      if (!seenFirstFrame) {
+        seenFirstFrame = true;
+        setTracking('ready');
+        readyTimer = window.setTimeout(() => setTracking('hidden'), 3500);
+      }
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
       if (canvas.width !== video.videoWidth) canvas.width = video.videoWidth;
@@ -206,6 +217,7 @@ function CameraViewImpl({
     });
     return () => {
       cancelled = true;
+      clearTimeout(readyTimer);
       video.removeEventListener('loadedmetadata', onResize);
       video.removeEventListener('resize', onResize);
       document.removeEventListener('visibilitychange', takeWakeLock);
@@ -234,6 +246,16 @@ function CameraViewImpl({
             </li>
           ))}
         </ul>
+      )}
+      {!error && tracking !== 'hidden' && (
+        <p
+          role="status"
+          className="absolute inset-x-2 bottom-2 rounded-[2px] bg-black/65 px-2.5 py-1.5 text-[12px] leading-snug text-white/90 sm:inset-x-auto sm:left-2 sm:max-w-[22rem]"
+        >
+          {tracking === 'loading'
+            ? 'The model is loading. Once tracking points appear on you, start signing.'
+            : 'Tracking. You can start signing.'}
+        </p>
       )}
       {error && (
         <div role="alert" className="absolute inset-0 grid place-content-center gap-1 bg-[#0e1012] p-6 text-center">
