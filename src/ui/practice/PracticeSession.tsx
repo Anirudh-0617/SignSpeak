@@ -180,14 +180,16 @@ function PracticeSessionImpl() {
 
   // Desk layout: the target, its verdict and the model readout stay together
   // in a left column, so the verdict is never below the fold under two
-  // full-width stages. Stacks on smaller screens.
+  // full-width stages. Below lg the column dissolves (display: contents) and
+  // the stages slot in right under the target via `order`, side by side —
+  // a phone sees the sign, both figures and the verdict without scrolling.
   return (
     <section
       className="grid gap-x-10 gap-y-6 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]"
       aria-label={`Practicing ${sign.gloss}`}
     >
-      <div className="grid content-start gap-6">
-        <div className="flex items-center justify-between gap-4">
+      <div className="contents lg:grid lg:content-start lg:gap-6">
+        <div className="order-1 flex items-center justify-between gap-4">
           <button type="button" onClick={() => setCurrentSign(null)} className="g-quiet text-sm py-1">
             <span aria-hidden="true">&larr; </span>All signs
           </button>
@@ -197,7 +199,7 @@ function PracticeSessionImpl() {
           </span>
         </div>
 
-        <header className="grid gap-3">
+        <header className="order-1 grid gap-3">
           <div className="flex items-baseline gap-3">
             <h1
               className={
@@ -222,7 +224,7 @@ function PracticeSessionImpl() {
         </header>
 
         {/* Action zone: the verdict lands here, next to the target. */}
-        <div className="grid gap-6 border-t border-rule pt-4">
+        <div className="order-3 grid gap-6 border-t border-rule pt-4">
           <div className="grid gap-4 content-start">
             {coaching && <p className="text-ink-2">{statusText}</p>}
             <div role="status" aria-live="polite" className="grid gap-1 empty:hidden">
@@ -302,9 +304,9 @@ function PracticeSessionImpl() {
         </div>
       </div>
 
-      {/* Side-by-side on md+, stacked on mobile. Each stage keeps its own 4:3
-          aspect so heights match without extra math. */}
-      <div className="grid gap-4 content-start md:grid-cols-2">
+      {/* Always side by side: on a phone, reference and you have to be on
+          screen together to copy the figure. */}
+      <div className="order-2 grid grid-cols-2 items-start gap-3 content-start md:gap-4">
         <div className="grid gap-1.5 content-start">
           <span className="g-gloss text-[11px] text-ink-3">Reference</span>
           <ReferenceSkeleton gloss={sign.gloss} />
@@ -320,7 +322,7 @@ function PracticeSessionImpl() {
       </div>
 
       {LAB && (
-        <div className="lg:col-span-2 flex flex-wrap items-center gap-3 border-t border-rule pt-3 text-xs text-ink-3">
+        <div className="order-4 lg:col-span-2 flex flex-wrap items-center gap-3 border-t border-rule pt-3 text-xs text-ink-3">
           <button
             type="button"
             onClick={startRecording}

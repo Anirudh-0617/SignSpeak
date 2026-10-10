@@ -406,6 +406,38 @@
   border-radius: 2px;
   overflow: hidden;
 }
+/* Touch: text-only controls get a ~44 px hit area without changing how they
+   look — an invisible pad around the box, so underlines stay put. */
+@media (pointer: coarse) {
+  .v-gloss .g-theme button,
+  .v-gloss .g-quiet {
+    position: relative;
+  }
+  .v-gloss .g-theme button::before,
+  .v-gloss .g-quiet::before {
+    content: '';
+    position: absolute;
+    inset: max(-14px, calc((100% - 44px) / 2)) -6px;
+  }
+  /* No keyboard to press: key hints are noise. */
+  .v-gloss kbd { display: none; }
+}
+
+/* Notched phones / installed PWA (viewport-fit=cover): keep content out of
+   the sensor housing and home indicator. */
+.v-gloss .g-safe-b { padding-bottom: env(safe-area-inset-bottom); }
+.v-gloss .g-safe-t { padding-top: env(safe-area-inset-top); }
+
+/* Live camera: shaped like the stream (--ar set from videoWidth/Height).
+   Below desktop it is capped so a portrait phone feed never pushes the
+   readout and transcript off the first screen. */
+.v-gloss .g-cam { aspect-ratio: var(--ar, 4 / 3); }
+@media (max-width: 1023px) {
+  .v-gloss .g-cam {
+    max-width: calc(58svh * var(--ar, 4 / 3));
+    margin-inline: auto;
+  }
+}
 
 /* Kbd hint next to an action. */
 .v-gloss kbd {

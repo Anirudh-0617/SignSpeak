@@ -82,8 +82,9 @@ function StepView({
           app sees. {hint}
         </p>
       </div>
-      {/* Reference gets the bigger share: it is what a non-signer is copying. */}
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+      {/* Reference gets the bigger share: it is what a non-signer is copying.
+          Side by side even on phones — copying needs both in view. */}
+      <div className="grid grid-cols-2 items-start gap-3 md:gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
         <div className="grid content-start gap-2">
           <StageLabel>Reference</StageLabel>
           <ReferenceSkeleton gloss={gloss} />

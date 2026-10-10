@@ -1,4 +1,4 @@
-import { memo, useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState, type CSSProperties } from 'react';
 import {
   DrawingUtils,
   type FaceLandmarkerResult,
@@ -9,9 +9,24 @@ import { CameraSource } from '../input/CameraSource';
 import { splitHands } from '../perception/hand';
 import { drawFace, drawHand, drawPose, handColor } from './landmarkDraw';
 import type { FeatureFrame } from '../input/InputSource';
-import { LAB } from './lab';
+import { LAB, LITE } from './lab';
 
 type Blendshape = { label: string; score: number };
+
+
+function cameraErrorMessage(e: unknown): string {
+  if (e instanceof DOMException) {
+    if (e.name === 'NotAllowedError')
+      return 'Camera access was blocked. Allow it in your browser’s site settings (on iPhone: Settings › Safari › Camera), then reload.';
+    if (e.name === 'NotFoundError' || e.name === 'OverconstrainedError')
+      return 'No front camera was found on this device.';
+    if (e.name === 'NotReadableError')
+      return 'The camera is in use by another app. Close it and reload.';
+  }
+  if (typeof window !== 'undefined' && !window.isSecureContext)
+    return 'The camera needs a secure (https) connection.';
+  return e instanceof Error ? e.message : String(e);
+}
 
 // Composite raw-landmark payload emitted per hand-rate frame. Consumers today:
 // reference-clip recording in PracticeSession. Also re-exported for its consumer.
@@ -38,6 +53,9 @@ function CameraViewImpl({
   const [fps, setFps] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [blendshapes, setBlendshapes] = useState<Blendshape[]>([]);
+  // The stage takes the stream's real shape: 4:3 on laptops, 3:4 on a phone
+  // held upright. A fixed 4:3 box with object-cover cropped hands off the top.
+  const [aspect, setAspect] = useState(4 / 3);
 
   // ponytail: mirror onFrame into a ref so identity churn upstream (e.g. state
   // updates every predicted frame) doesn't restart the camera.
@@ -55,10 +73,31 @@ function CameraViewImpl({
     const video = videoRef.current;
     const canvas = canvasRef.current;
     if (!video || !canvas) return;
-    const source = new CameraSource(video);
+    const source = new CameraSource(video, { lite: LITE });
+
+    const onResize = () => {
+      if (video.videoWidth && video.videoHeight) setAspect(video.videoWidth / video.videoHeight);
+    };
+    // 'resize' also fires when a phone rotates mid-session.
+    video.addEventListener('loadedmetadata', onResize);
+    video.addEventListener('resize', onResize);
+
+    // Keep the screen on while signing — nobody touches the phone mid-sentence.
+    // The lock drops when the tab hides, so re-take it on return.
+    let wakeLock: WakeLockSentinel | null = null;
+    const takeWakeLock = () => {
+      if (document.visibilityState !== 'visible' || !('wakeLock' in navigator)) return;
+      navigator.wakeLock.request('screen').then(
+        (l) => (wakeLock = l),
+        () => {},
+      );
+    };
+    takeWakeLock();
+    document.addEventListener('visibilitychange', takeWakeLock);
 
     let last = performance.now();
     let ema = 0;
+    let lastFpsAt = 0;
     // ponytail: throttle blendshape state to 5 Hz — labels barely change faster
     // than that and 30 Hz setState is wasted renders on a 3-row chip strip.
     let lastBlendshapeAt = 0;
@@ -150,7 +189,11 @@ function CameraViewImpl({
       const inst = 1000 / Math.max(now - last, 1);
       last = now;
       ema = ema ? ema * 0.9 + inst * 0.1 : inst;
-      setFps(ema);
+      // 4 Hz is plenty for a readout; per-frame setState was 30 renders/s.
+      if (now - lastFpsAt > 250) {
+        lastFpsAt = now;
+        setFps(ema);
+      }
     });
 
     source.onFrame((f) => onFrameRef.current?.(f));
@@ -159,16 +202,20 @@ function CameraViewImpl({
     source.start().catch((e: unknown) => {
       if (cancelled) return;
       if (e instanceof DOMException && e.name === 'AbortError') return;
-      setError(e instanceof Error ? e.message : String(e));
+      setError(cameraErrorMessage(e));
     });
     return () => {
       cancelled = true;
+      video.removeEventListener('loadedmetadata', onResize);
+      video.removeEventListener('resize', onResize);
+      document.removeEventListener('visibilitychange', takeWakeLock);
+      void wakeLock?.release();
       void source.stop();
     };
   }, []);
 
   return (
-    <div className="g-stage relative w-full aspect-[4/3]">
+    <div className="g-stage g-cam relative w-full" style={{ '--ar': aspect } as CSSProperties}>
       <video ref={videoRef} playsInline muted className="w-full h-full object-cover -scale-x-100" />
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full -scale-x-100 pointer-events-none" />
       <div className="absolute top-2 right-2 rounded-[2px] bg-black/55 px-1.5 py-0.5 g-mono text-[11px] text-white/75">

@@ -79,7 +79,7 @@ function ComposerImpl({
         </span>
       </div>
 
-      <div className="g-tape-wrap min-h-[6.5rem] flex items-center" aria-hidden="true">
+      <div className="g-tape-wrap min-h-[4.5rem] lg:min-h-[6.5rem] flex items-center" aria-hidden="true">
         <p className="g-tape" style={{ '--glyphs': glyphs } as CSSProperties}>
           <span className="text-ink">{head}</span>
           {candidate ? (

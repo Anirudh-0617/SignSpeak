@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/icon.svg" />
-    <meta name="theme-color" content="#14121f" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- iOS ignores SVG touch icons; it needs a 180 px PNG. -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#eceef1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <!-- Type system. Three faces, three jobs: Bricolage Grotesque sets display
          headlines, Public Sans carries body copy, JetBrains Mono handles labels
          and glosses. The mono isn't decorative — ASL is transcribed in caps in

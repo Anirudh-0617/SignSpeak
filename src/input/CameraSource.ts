@@ -18,6 +18,10 @@ const FACE_INTERVAL_MS = 33;
 // ponytail: pose is display-only (Phase 12), throttled 10 Hz for the same
 // reasons as face. Not written into the feature vector — classifier stays v0.4.
 const POSE_INTERVAL_MS = 100;
+// Lite (phones): no face model at all — the live classifiers are hands-only
+// (featureLen 252), so face only ever fed the overlay dots. Pose still runs
+// for the practice torso gate, at half rate.
+const LITE_POSE_INTERVAL_MS = 200;
 
 export class CameraSource implements InputSource {
   readonly kind = 'camera' as const;
@@ -38,8 +42,12 @@ export class CameraSource implements InputSource {
   private poseCbs: PoseCb[] = [];
 
   private readonly video: HTMLVideoElement;
-  constructor(video: HTMLVideoElement) {
+  private readonly lite: boolean;
+  private readonly poseIntervalMs: number;
+  constructor(video: HTMLVideoElement, opts: { lite?: boolean } = {}) {
     this.video = video;
+    this.lite = opts.lite ?? false;
+    this.poseIntervalMs = this.lite ? LITE_POSE_INTERVAL_MS : POSE_INTERVAL_MS;
   }
 
   onFrame(cb: FrameCb) {
@@ -63,7 +71,10 @@ export class CameraSource implements InputSource {
   async start() {
     this.cancelled = false;
     this.stream = await navigator.mediaDevices.getUserMedia({
-      video: { width: 640, height: 480 },
+      // `ideal`, not exact: phones in portrait hand back 480×640 and some
+      // can't do 640×480 at all. normalize() multiplies x by the real aspect
+      // ratio, so features are the same in either orientation.
+      video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } },
       audio: false,
     });
     if (this.cancelled) return this.teardown();
@@ -80,10 +91,12 @@ export class CameraSource implements InputSource {
     // (rare) is non-fatal — hands are the only required signal for classification.
     const [hand, face, pose] = await Promise.all([
       createHandLandmarker(),
-      createFaceLandmarker().catch((e) => {
-        console.warn('[camera] FaceLandmarker init failed, continuing without face:', e);
-        return null;
-      }),
+      this.lite
+        ? null
+        : createFaceLandmarker().catch((e) => {
+            console.warn('[camera] FaceLandmarker init failed, continuing without face:', e);
+            return null;
+          }),
       createPoseLandmarker().catch((e) => {
         console.warn('[camera] PoseLandmarker init failed, continuing without pose:', e);
         return null;
@@ -137,7 +150,7 @@ export class CameraSource implements InputSource {
         freshFace = true;
       }
       let freshPose = false;
-      if (this.poseLandmarker && ts - this.lastPoseAt >= POSE_INTERVAL_MS) {
+      if (this.poseLandmarker && ts - this.lastPoseAt >= this.poseIntervalMs) {
         this.lastPoseResult = this.poseLandmarker.detectForVideo(this.video, ts);
         this.lastPoseAt = ts;
         freshPose = true;

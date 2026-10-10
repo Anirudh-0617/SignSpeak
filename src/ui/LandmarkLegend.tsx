@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { landmarkColors } from './tokens';
+import { LITE } from './lab';
 
 // ponytail: the overlay colours are meaningless to a first-time viewer, which
 // is most of our judges. tokens.landmarkColors is the single source — the
@@ -11,12 +12,13 @@ import { landmarkColors } from './tokens';
 // stroke weight and dot density, not colour (see landmarkDraw.ts). A row of
 // identical dots would misrepresent that. Hands lead — they're the pair a
 // viewer has to tell apart.
-const ITEMS = [
+const ITEMS = ([
   { color: landmarkColors.leftHand, label: 'left hand', mark: 'hand' },
   { color: landmarkColors.rightHand, label: 'right hand', mark: 'hand' },
   { color: landmarkColors.pose, label: 'body', mark: 'line' },
   { color: landmarkColors.face, label: 'face', mark: 'dots' },
-] as const;
+  // Lite mode (phones) doesn't run the face model, so don't promise dots.
+] as const).filter((it) => !(LITE && it.mark === 'dots'));
 
 function Swatch({ color, mark }: { color: string; mark: 'hand' | 'line' | 'dots' }) {
   return (

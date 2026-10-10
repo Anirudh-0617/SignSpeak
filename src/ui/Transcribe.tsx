@@ -52,7 +52,7 @@ export function Transcribe() {
         <CameraView onFrame={handleFrame} />
       </section>
 
-      <div className="[grid-area:rail] grid content-start gap-10 lg:sticky lg:top-20 lg:self-start">
+      <div className="[grid-area:rail] grid content-start gap-6 lg:gap-10 lg:sticky lg:top-20 lg:self-start">
         <Composer
           mode={mode}
           top={live.top}

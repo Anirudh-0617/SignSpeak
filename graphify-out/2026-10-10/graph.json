@@ -351,8 +351,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "landing_backup_variants_gloss_hero",
-      "community": 46,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 53,
+      "community_name": "Return (train_idx, test_idx, holdout_name). Mirrors signer_split logic     but r",
       "norm_label": "hero()"
     },
     {
@@ -604,8 +604,8 @@
       "source_location": "L369",
       "_origin": "ast",
       "id": "landing_backup_variants_hands_how",
-      "community": 46,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 53,
+      "community_name": "Return (train_idx, test_idx, holdout_name). Mirrors signer_split logic     but r",
       "norm_label": "how()"
     },
     {
@@ -2738,8 +2738,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "motion_app_src_engine_audio_audiosample",
-      "community": 108,
-      "community_name": "timeline.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "audiosample"
     },
     {
@@ -2782,8 +2782,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "motion_app_src_engine_audio_audiodata_load",
-      "community": 101,
-      "community_name": "Engine",
+      "community": 78,
+      "community_name": ".init",
       "norm_label": ".load()"
     },
     {
@@ -2936,8 +2936,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "motion_app_src_engine_engine_adaptivesampling",
-      "community": 105,
-      "community_name": "main.ts",
+      "community": 67,
+      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
       "norm_label": "adaptivesampling"
     },
     {
@@ -2980,8 +2980,8 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "motion_app_src_engine_engine_engine_init",
-      "community": 101,
-      "community_name": "Engine",
+      "community": 78,
+      "community_name": ".init",
       "norm_label": ".init()"
     },
     {
@@ -3090,8 +3090,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "gl.ts"
     },
     {
@@ -3112,8 +3112,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_rt_scale",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "rt_scale"
     },
     {
@@ -3123,8 +3123,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_rtscale",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "rtscale()"
     },
     {
@@ -3189,8 +3189,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_fspass_render",
-      "community": 112,
-      "community_name": "Compositor",
+      "community": 101,
+      "community_name": "Engine",
       "norm_label": ".render()"
     },
     {
@@ -3200,8 +3200,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_blendmode",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "blendmode"
     },
     {
@@ -3244,8 +3244,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_scalecontext2d",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "scalecontext2d()"
     },
     {
@@ -3266,8 +3266,8 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_layer2d_constructor",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".constructor()"
     },
     {
@@ -3277,8 +3277,8 @@
       "source_location": "L203",
       "_origin": "ast",
       "id": "motion_app_src_engine_gl_layer2d_clear",
-      "community": 112,
-      "community_name": "Compositor",
+      "community": 101,
+      "community_name": "Engine",
       "norm_label": ".clear()"
     },
     {
@@ -3310,8 +3310,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_glsl_common",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 29,
+      "community_name": "AGENTS.md \u2014 Build rules for SignSpeak",
       "norm_label": "common.ts"
     },
     {
@@ -3321,8 +3321,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "motion_app_src_engine_glsl_common_v3",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 29,
+      "community_name": "AGENTS.md \u2014 Build rules for SignSpeak",
       "norm_label": "v3()"
     },
     {
@@ -3343,8 +3343,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "motion_app_src_engine_hud_caption",
-      "community": 47,
-      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
+      "community": 67,
+      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
       "norm_label": "caption"
     },
     {
@@ -3354,8 +3354,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "motion_app_src_engine_hud_pdoom",
-      "community": 47,
-      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
+      "community": 96,
+      "community_name": "Lyrics",
       "norm_label": "pdoom"
     },
     {
@@ -3387,8 +3387,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "motion_app_src_engine_hud_pdoom_flash",
-      "community": 47,
-      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
+      "community": 96,
+      "community_name": "Lyrics",
       "norm_label": ".flash()"
     },
     {
@@ -3398,8 +3398,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "motion_app_src_engine_hud_pdoom_laststep",
-      "community": 47,
-      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
+      "community": 96,
+      "community_name": "Lyrics",
       "norm_label": ".laststep()"
     },
     {
@@ -3519,8 +3519,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "lines.ts"
     },
     {
@@ -3530,8 +3530,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_lineblend",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "lineblend"
     },
     {
@@ -3541,8 +3541,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "linebatch"
     },
     {
@@ -3552,8 +3552,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_constructor",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".constructor()"
     },
     {
@@ -3563,8 +3563,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_capacity",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".capacity()"
     },
     {
@@ -3574,8 +3574,8 @@
       "source_location": "L112",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_clear",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".clear()"
     },
     {
@@ -3585,8 +3585,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_seg",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".seg()"
     },
     {
@@ -3596,8 +3596,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_seg2",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".seg2()"
     },
     {
@@ -3607,8 +3607,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_polyline",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".polyline()"
     },
     {
@@ -3618,8 +3618,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "motion_app_src_engine_lines_linebatch_render",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": ".render()"
     },
     {
@@ -3651,8 +3651,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "motion_app_src_engine_lyrics_line",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "line"
     },
     {
@@ -3673,8 +3673,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "motion_app_src_engine_lyrics_lyrics_constructor",
-      "community": 96,
-      "community_name": "Lyrics",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": ".constructor()"
     },
     {
@@ -3794,8 +3794,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "motion_app_src_engine_lyrics_lyrics_wordprogress",
-      "community": 96,
-      "community_name": "Lyrics",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": ".wordprogress()"
     },
     {
@@ -3838,8 +3838,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_palette",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "palette.ts"
     },
     {
@@ -3860,8 +3860,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "motion_app_src_engine_palette_palettekey",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "palettekey"
     },
     {
@@ -3871,8 +3871,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "motion_app_src_engine_palette_lin",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "lin"
     },
     {
@@ -3904,8 +3904,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "motion_app_src_engine_post_postparams",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 101,
+      "community_name": "Engine",
       "norm_label": "postparams"
     },
     {
@@ -3959,8 +3959,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_scale",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 29,
+      "community_name": "AGENTS.md \u2014 Build rules for SignSpeak",
       "norm_label": "scale.ts"
     },
     {
@@ -3970,8 +3970,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "motion_app_src_engine_scale_readscale",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 29,
+      "community_name": "AGENTS.md \u2014 Build rules for SignSpeak",
       "norm_label": "readscale()"
     },
     {
@@ -3981,8 +3981,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "motion_app_src_engine_scale_scale",
-      "community": 67,
-      "community_name": "MediaPipe returns hand_landmarks + handedness in parallel lists.",
+      "community": 29,
+      "community_name": "AGENTS.md \u2014 Build rules for SignSpeak",
       "norm_label": "scale"
     },
     {
@@ -3992,8 +3992,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_scene",
-      "community": 108,
-      "community_name": "timeline.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "scene.ts"
     },
     {
@@ -4124,8 +4124,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "motion_app_src_engine_stroke_strokefontname",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": "strokefontname"
     },
     {
@@ -4179,8 +4179,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "motion_app_src_engine_stroke_loadstrokefonts",
-      "community": 101,
-      "community_name": "Engine",
+      "community": 78,
+      "community_name": ".init",
       "norm_label": "loadstrokefonts()"
     },
     {
@@ -4322,8 +4322,8 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "motion_app_src_engine_stroke_stroketext",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": "stroketext"
     },
     {
@@ -4355,8 +4355,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_type",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "type.ts"
     },
     {
@@ -4366,8 +4366,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_archivo_widths",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "archivo_widths"
     },
     {
@@ -4377,8 +4377,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_archivo_weights",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "archivo_weights"
     },
     {
@@ -4388,8 +4388,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_fontdef",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "fontdef"
     },
     {
@@ -4399,8 +4399,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_defs",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "defs"
     },
     {
@@ -4421,8 +4421,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_nearest",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "nearest()"
     },
     {
@@ -4443,8 +4443,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_otcache",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "otcache"
     },
     {
@@ -4454,8 +4454,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_bufcache",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "bufcache"
     },
     {
@@ -4465,8 +4465,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_loadfonts",
-      "community": 101,
-      "community_name": "Engine",
+      "community": 78,
+      "community_name": ".init",
       "norm_label": "loadfonts()"
     },
     {
@@ -4476,8 +4476,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_ot",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "ot()"
     },
     {
@@ -4487,8 +4487,8 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_glyph",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "glyph"
     },
     {
@@ -4498,8 +4498,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_textlayout",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "textlayout"
     },
     {
@@ -4509,8 +4509,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_mctx",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "mctx()"
     },
     {
@@ -4531,8 +4531,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_glyphx",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "glyphx()"
     },
     {
@@ -4542,8 +4542,8 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_smart",
-      "community": 96,
-      "community_name": "Lyrics",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "smart()"
     },
     {
@@ -4553,8 +4553,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_plain",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 75,
+      "community_name": "Prompt",
       "norm_label": "plain()"
     },
     {
@@ -4564,8 +4564,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_measure",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "measure()"
     },
     {
@@ -4575,8 +4575,8 @@
       "source_location": "L172",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_fitsize",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "fitsize()"
     },
     {
@@ -4586,8 +4586,8 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_textpathcommands",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "textpathcommands()"
     },
     {
@@ -4597,8 +4597,8 @@
       "source_location": "L191",
       "_origin": "ast",
       "id": "motion_app_src_engine_type_textpath2d",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "textpath2d()"
     },
     {
@@ -4619,8 +4619,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_engine_util",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "util.ts"
     },
     {
@@ -4630,8 +4630,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_clamp",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": "clamp()"
     },
     {
@@ -4652,8 +4652,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_invlerp",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": "invlerp()"
     },
     {
@@ -4663,8 +4663,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_remap",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": "remap()"
     },
     {
@@ -4685,8 +4685,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_smootherstep",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": "smootherstep()"
     },
     {
@@ -4696,8 +4696,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_fract",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "fract()"
     },
     {
@@ -4707,8 +4707,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_mod",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "mod()"
     },
     {
@@ -4740,8 +4740,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_prog",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": "prog()"
     },
     {
@@ -4751,8 +4751,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_springstep",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "springstep()"
     },
     {
@@ -4762,8 +4762,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_pulse",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "pulse()"
     },
     {
@@ -4773,8 +4773,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_mulberry32",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "mulberry32()"
     },
     {
@@ -4784,8 +4784,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_frameidx",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "frameidx()"
     },
     {
@@ -4795,8 +4795,8 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_hash",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "hash()"
     },
     {
@@ -4806,8 +4806,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_fade",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "fade()"
     },
     {
@@ -4817,8 +4817,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_noise1",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "noise1()"
     },
     {
@@ -4828,8 +4828,8 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_noise2",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "noise2()"
     },
     {
@@ -4839,8 +4839,8 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_noise3",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "noise3()"
     },
     {
@@ -4850,8 +4850,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_fbm1",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "fbm1()"
     },
     {
@@ -4861,8 +4861,8 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_fbm2",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "fbm2()"
     },
     {
@@ -4872,8 +4872,8 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_key",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "key"
     },
     {
@@ -4883,8 +4883,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_keys",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": "keys()"
     },
     {
@@ -4894,8 +4894,8 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_vec2",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "vec2()"
     },
     {
@@ -4949,8 +4949,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "motion_app_src_engine_util_hextolinear",
-      "community": 65,
-      "community_name": "stroke.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "hextolinear()"
     },
     {
@@ -5499,8 +5499,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "motion_app_src_scenes_gloss_captions_draw",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": ".draw()"
     },
     {
@@ -5543,8 +5543,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "_motifs.ts"
     },
     {
@@ -5554,8 +5554,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_p2",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "p2"
     },
     {
@@ -5565,8 +5565,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_sparkparticles",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "sparkparticles()"
     },
     {
@@ -5576,8 +5576,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_sparkhead",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "sparkhead()"
     },
     {
@@ -5587,8 +5587,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_sparkhead2d",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "sparkhead2d()"
     },
     {
@@ -5598,8 +5598,8 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_mask",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "mask"
     },
     {
@@ -5609,8 +5609,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "motion_app_src_scenes_motifs_drawmask2d",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "drawmask2d()"
     },
     {
@@ -5620,8 +5620,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "_vo.ts"
     },
     {
@@ -5631,8 +5631,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_p",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "p"
     },
     {
@@ -5642,8 +5642,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_rgb",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "rgb"
     },
     {
@@ -5653,8 +5653,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_ease",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "ease"
     },
     {
@@ -5664,8 +5664,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_pt",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "pt()"
     },
     {
@@ -5708,8 +5708,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_lengths",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": "lengths()"
     },
     {
@@ -5730,8 +5730,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_arc",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "arc()"
     },
     {
@@ -5741,8 +5741,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_rectpts",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "rectpts()"
     },
     {
@@ -5752,8 +5752,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_bezier",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "bezier()"
     },
     {
@@ -5785,8 +5785,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_triangle",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "triangle()"
     },
     {
@@ -5796,8 +5796,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_returnarrow",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 75,
+      "community_name": "Prompt",
       "norm_label": "returnarrow()"
     },
     {
@@ -5862,8 +5862,8 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_camkey",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": "camkey"
     },
     {
@@ -5884,8 +5884,8 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_cam2d_key",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 50,
+      "community_name": "lerp",
       "norm_label": ".key()"
     },
     {
@@ -5906,8 +5906,8 @@
       "source_location": "L160",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_w2s",
-      "community": 50,
-      "community_name": "lerp",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "w2s()"
     },
     {
@@ -5917,8 +5917,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_s2w",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "s2w()"
     },
     {
@@ -5939,8 +5939,8 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_kind",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "kind"
     },
     {
@@ -5950,8 +5950,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_stroke",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "stroke"
     },
     {
@@ -5961,8 +5961,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_note",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "note"
     },
     {
@@ -5972,8 +5972,8 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_addopts",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "addopts"
     },
     {
@@ -5983,8 +5983,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": "plot"
     },
     {
@@ -6005,8 +6005,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot_add",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": ".add()"
     },
     {
@@ -6016,8 +6016,8 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot_wp",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": ".wp()"
     },
     {
@@ -6027,8 +6027,8 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot_note",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": ".note()"
     },
     {
@@ -6038,8 +6038,8 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot_dimension",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": ".dimension()"
     },
     {
@@ -6049,8 +6049,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_plot_writewords",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 65,
+      "community_name": "stroke.ts",
       "norm_label": ".writewords()"
     },
     {
@@ -6093,8 +6093,8 @@
       "source_location": "L410",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_drawpen",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "drawpen()"
     },
     {
@@ -6104,8 +6104,8 @@
       "source_location": "L435",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_kword",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "kword"
     },
     {
@@ -6115,8 +6115,8 @@
       "source_location": "L442",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_placerow",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "placerow()"
     },
     {
@@ -6148,8 +6148,8 @@
       "source_location": "L465",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_karaokeopts",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "karaokeopts"
     },
     {
@@ -6159,8 +6159,8 @@
       "source_location": "L483",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_drawkaraoke",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "drawkaraoke()"
     },
     {
@@ -6192,8 +6192,8 @@
       "source_location": "L579",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_flick",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "flick()"
     },
     {
@@ -6203,8 +6203,8 @@
       "source_location": "L581",
       "_origin": "ast",
       "id": "motion_app_src_scenes_vo_shake",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "shake()"
     },
     {
@@ -6214,8 +6214,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "code.ts"
     },
     {
@@ -6247,8 +6247,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_a",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "a"
     },
     {
@@ -6269,8 +6269,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_inset",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "inset"
     },
     {
@@ -6280,8 +6280,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_code",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "code"
     },
     {
@@ -6302,8 +6302,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_init",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 50,
+      "community_name": "lerp",
       "norm_label": ".init()"
     },
     {
@@ -6324,8 +6324,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_buildcode",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 50,
+      "community_name": "lerp",
       "norm_label": ".buildcode()"
     },
     {
@@ -6346,8 +6346,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_buildplot",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 50,
+      "community_name": "lerp",
       "norm_label": ".buildplot()"
     },
     {
@@ -6357,8 +6357,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_buildcamera",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 50,
+      "community_name": "lerp",
       "norm_label": ".buildcamera()"
     },
     {
@@ -6401,8 +6401,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_adv",
-      "community": 50,
-      "community_name": "lerp",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": ".adv()"
     },
     {
@@ -6434,8 +6434,8 @@
       "source_location": "L254",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_drawlisting",
-      "community": 50,
-      "community_name": "lerp",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": ".drawlisting()"
     },
     {
@@ -6445,8 +6445,8 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_squarepts",
-      "community": 50,
-      "community_name": "lerp",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".squarepts()"
     },
     {
@@ -6456,8 +6456,8 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "motion_app_src_scenes_code_codescene_wipe",
-      "community": 50,
-      "community_name": "lerp",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": ".wipe()"
     },
     {
@@ -6533,8 +6533,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "crazy.ts"
     },
     {
@@ -6544,8 +6544,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_arch",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "arch()"
     },
     {
@@ -6555,8 +6555,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_widths",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "widths"
     },
     {
@@ -6577,8 +6577,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_crazy",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "crazy"
     },
     {
@@ -6588,8 +6588,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_crazy_init",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".init()"
     },
     {
@@ -6599,8 +6599,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_crazy_buildb",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".buildb()"
     },
     {
@@ -6610,8 +6610,8 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_crazy_render",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".render()"
     },
     {
@@ -6621,8 +6621,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "motion_app_src_scenes_crazy_crazy_rendera",
-      "community": 15,
-      "community_name": "graphify reference: extra exports and benchmark",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".rendera()"
     },
     {
@@ -6643,8 +6643,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "edits.ts"
     },
     {
@@ -6654,8 +6654,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_arch",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": "arch()"
     },
     {
@@ -6665,8 +6665,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_pv",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "pv"
     },
     {
@@ -6676,8 +6676,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_tl",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "tl"
     },
     {
@@ -6687,8 +6687,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_ch",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "ch"
     },
     {
@@ -6698,8 +6698,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_kf",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "kf"
     },
     {
@@ -6709,8 +6709,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_cmd",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "cmd"
     },
     {
@@ -6720,8 +6720,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": "edits"
     },
     {
@@ -6731,8 +6731,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_init",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".init()"
     },
     {
@@ -6742,8 +6742,8 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_k",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".k()"
     },
     {
@@ -6753,8 +6753,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_clock",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".clock()"
     },
     {
@@ -6764,8 +6764,8 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_render",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".render()"
     },
     {
@@ -6775,8 +6775,8 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_groupalpha",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".groupalpha()"
     },
     {
@@ -6797,8 +6797,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_puckworld",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".puckworld()"
     },
     {
@@ -6808,8 +6808,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_morph",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".morph()"
     },
     {
@@ -6819,8 +6819,8 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_drawpreview",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".drawpreview()"
     },
     {
@@ -6830,8 +6830,8 @@
       "source_location": "L290",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_edits_drawtimeline",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": ".drawtimeline()"
     },
     {
@@ -6863,8 +6863,8 @@
       "source_location": "L505",
       "_origin": "ast",
       "id": "motion_app_src_scenes_edits_squareat",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": "squareat()"
     },
     {
@@ -6874,8 +6874,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "frames.ts"
     },
     {
@@ -6885,8 +6885,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_arch",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": "arch()"
     },
     {
@@ -6896,8 +6896,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_expo",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": "expo()"
     },
     {
@@ -6907,8 +6907,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": "frames"
     },
     {
@@ -6918,8 +6918,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_init",
-      "community": 49,
-      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".init()"
     },
     {
@@ -6929,8 +6929,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_scroll",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".scroll()"
     },
     {
@@ -6940,8 +6940,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_collapse",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".collapse()"
     },
     {
@@ -6951,8 +6951,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_frameno",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".frameno()"
     },
     {
@@ -6962,8 +6962,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_groupalpha",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".groupalpha()"
     },
     {
@@ -6973,8 +6973,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_render",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".render()"
     },
     {
@@ -6984,8 +6984,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_scank",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".scank()"
     },
     {
@@ -6995,8 +6995,8 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "motion_app_src_scenes_frames_frames_drawframe",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 76,
+      "community_name": "prog",
       "norm_label": ".drawframe()"
     },
     {
@@ -7017,8 +7017,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "hook.ts"
     },
     {
@@ -7028,8 +7028,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_arch",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "arch()"
     },
     {
@@ -7039,8 +7039,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_widths",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "widths"
     },
     {
@@ -7050,8 +7050,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": "hook"
     },
     {
@@ -7061,8 +7061,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_init",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".init()"
     },
     {
@@ -7072,8 +7072,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_builda",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".builda()"
     },
     {
@@ -7083,8 +7083,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_buildb",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".buildb()"
     },
     {
@@ -7094,8 +7094,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_buildc",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".buildc()"
     },
     {
@@ -7105,8 +7105,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_buildd",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".buildd()"
     },
     {
@@ -7116,8 +7116,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_buildcamera",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".buildcamera()"
     },
     {
@@ -7127,8 +7127,8 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "motion_app_src_scenes_hook_hook_groupalpha",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".groupalpha()"
     },
     {
@@ -7215,8 +7215,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_model",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "model.ts"
     },
     {
@@ -7325,8 +7325,8 @@
       "source_location": "L252",
       "_origin": "ast",
       "id": "motion_app_src_scenes_model_model_handleat",
-      "community": 4,
-      "community_name": "CameraSource.ts",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".handleat()"
     },
     {
@@ -7347,8 +7347,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "motion_app_src_scenes_model_model_draweditor",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 11,
+      "community_name": "ROADMAP \u2014 SignSpeak",
       "norm_label": ".draweditor()"
     },
     {
@@ -7358,8 +7358,8 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "motion_app_src_scenes_model_model_caret",
-      "community": 11,
-      "community_name": "ROADMAP \u2014 SignSpeak",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": ".caret()"
     },
     {
@@ -7380,8 +7380,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "pipeline.ts"
     },
     {
@@ -7402,8 +7402,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_pipeline",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 7,
+      "community_name": "CameraSource",
       "norm_label": "pipeline"
     },
     {
@@ -7413,8 +7413,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_pipeline_init",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 7,
+      "community_name": "CameraSource",
       "norm_label": ".init()"
     },
     {
@@ -7424,8 +7424,8 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_pipeline_makestamp",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 54,
+      "community_name": "rgba",
       "norm_label": ".makestamp()"
     },
     {
@@ -7435,8 +7435,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_pipeline_render",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 7,
+      "community_name": "CameraSource",
       "norm_label": ".render()"
     },
     {
@@ -7457,8 +7457,8 @@
       "source_location": "L262",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_pipeline_drawstamp",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 7,
+      "community_name": "CameraSource",
       "norm_label": ".drawstamp()"
     },
     {
@@ -7468,8 +7468,8 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "motion_app_src_scenes_pipeline_lyrics_hot",
-      "community": 16,
-      "community_name": "graphify reference: query, path, explain",
+      "community": 47,
+      "community_name": "Fabricate an easily-separable dataset \u2014 proves the training pipeline plumbing.",
       "norm_label": "lyrics_hot()"
     },
     {
@@ -7523,8 +7523,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "prompt.ts"
     },
     {
@@ -7545,8 +7545,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_shot",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "shot"
     },
     {
@@ -7644,8 +7644,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_prompt_drawstage",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": ".drawstage()"
     },
     {
@@ -7699,8 +7699,8 @@
       "source_location": "L466",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_circlept",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "circlept()"
     },
     {
@@ -7710,8 +7710,8 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_squarept",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "squarept()"
     },
     {
@@ -7721,8 +7721,8 @@
       "source_location": "L473",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_tript",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "tript()"
     },
     {
@@ -7743,8 +7743,8 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_cube",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "cube()"
     },
     {
@@ -7754,8 +7754,8 @@
       "source_location": "L490",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_octa",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "octa()"
     },
     {
@@ -7765,8 +7765,8 @@
       "source_location": "L496",
       "_origin": "ast",
       "id": "motion_app_src_scenes_prompt_wire",
-      "community": 75,
-      "community_name": "Prompt",
+      "community": 98,
+      "community_name": "type.ts",
       "norm_label": "wire()"
     },
     {
@@ -8282,8 +8282,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "verdict.ts"
     },
     {
@@ -8293,8 +8293,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_arch",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": "arch()"
     },
     {
@@ -8304,8 +8304,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_idea",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "idea"
     },
     {
@@ -8315,8 +8315,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_frame",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "frame"
     },
     {
@@ -8326,8 +8326,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_tln",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 49,
+      "community_name": "Hold out one signer for test. Falls back to random split if only one signer.",
       "norm_label": "tln"
     },
     {
@@ -8403,8 +8403,8 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_verdict_renderb",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".renderb()"
     },
     {
@@ -8414,8 +8414,8 @@
       "source_location": "L293",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_verdict_drawidea",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".drawidea()"
     },
     {
@@ -8447,8 +8447,8 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_verdict_drawslam",
-      "community": 54,
-      "community_name": "rgba",
+      "community": 4,
+      "community_name": "CameraSource.ts",
       "norm_label": ".drawslam()"
     },
     {
@@ -8458,8 +8458,8 @@
       "source_location": "L411",
       "_origin": "ast",
       "id": "motion_app_src_scenes_verdict_squareat",
-      "community": 7,
-      "community_name": "CameraSource",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
       "norm_label": "squareat()"
     },
     {
@@ -9448,8 +9448,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_core",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 99,
+      "community_name": "core.ts",
       "norm_label": "core.ts"
     },
     {
@@ -9459,8 +9459,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_input_camerasource",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "camerasource.ts"
     },
     {
@@ -9470,8 +9470,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_input_camerasource_framecb",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "framecb"
     },
     {
@@ -9481,8 +9481,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_input_camerasource_rawcb",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "rawcb"
     },
     {
@@ -9492,8 +9492,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_input_camerasource_facecb",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "facecb"
     },
     {
@@ -9503,118 +9503,118 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_input_camerasource_posecb",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "posecb"
     },
     {
       "label": "CameraSource",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L26",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": "camerasource"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L47",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_constructor",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".constructor()"
     },
     {
       "label": ".onFrame()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L53",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_onframe",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".onframe()"
     },
     {
       "label": ".onRaw()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L59",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_onraw",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".onraw()"
     },
     {
       "label": ".onRawFace()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L63",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_onrawface",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".onrawface()"
     },
     {
       "label": ".onRawPose()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L67",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_onrawpose",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".onrawpose()"
     },
     {
       "label": ".start()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L71",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_start",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".start()"
     },
     {
       "label": ".stop()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L117",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_stop",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".stop()"
     },
     {
       "label": ".teardown()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L126",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_teardown",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".teardown()"
     },
     {
       "label": ".loop()",
       "file_type": "code",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L139",
+      "source_location": "L126",
       "_origin": "ast",
       "id": "src_input_camerasource_camerasource_loop",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".loop()"
     },
     {
@@ -9624,8 +9624,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_input_inputsource",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 0,
+      "community_name": "compilerOptions",
       "norm_label": "inputsource.ts"
     },
     {
@@ -9635,8 +9635,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_input_inputsource_featureframe",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 0,
+      "community_name": "compilerOptions",
       "norm_label": "featureframe"
     },
     {
@@ -10020,8 +10020,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_landing_signplayer",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "signplayer.tsx"
     },
     {
@@ -10031,8 +10031,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_landing_signplayer_signplayerprops",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "signplayerprops"
     },
     {
@@ -10042,8 +10042,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_landing_signplayer_loaded",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "loaded"
     },
     {
@@ -10053,8 +10053,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_landing_signplayer_signplayerimpl",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "signplayerimpl()"
     },
     {
@@ -10064,8 +10064,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "src_landing_signplayer_signplayer",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "signplayer"
     },
     {
@@ -10152,8 +10152,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "src_landing_content_hero_sequence",
-      "community": 46,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 53,
+      "community_name": "Return (train_idx, test_idx, holdout_name). Mirrors signer_split logic     but r",
       "norm_label": "hero_sequence"
     },
     {
@@ -10262,8 +10262,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_landing_signclip_loadclip",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "loadclip()"
     },
     {
@@ -10284,8 +10284,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_landing_signclip_handcolors",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "handcolors"
     },
     {
@@ -10317,8 +10317,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_landing_useinview",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "useinview.ts"
     },
     {
@@ -10339,8 +10339,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_landing_useinview_subscribe",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "subscribe()"
     },
     {
@@ -10350,8 +10350,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_landing_useinview_useprefersreducedmotion",
-      "community": 19,
-      "community_name": "graphify reference: incremental update and cluster-only",
+      "community": 72,
+      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
       "norm_label": "useprefersreducedmotion()"
     },
     {
@@ -10372,8 +10372,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_perception_assets",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "assets.ts"
     },
     {
@@ -10383,30 +10383,19 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_perception_assets_perceptionassets",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "perceptionassets"
-    },
-    {
-      "label": "withDelegateFallback()",
-      "file_type": "code",
-      "source_file": "src/perception/assets.ts",
-      "source_location": "L32",
-      "_origin": "ast",
-      "id": "src_perception_assets_withdelegatefallback",
-      "community": 20,
-      "community_name": "Capture",
-      "norm_label": "withdelegatefallback()"
     },
     {
       "label": "configurePerceptionAssets()",
       "file_type": "code",
       "source_file": "src/perception/assets.ts",
-      "source_location": "L45",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "src_perception_assets_configureperceptionassets",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "configureperceptionassets()"
     },
     {
@@ -10416,8 +10405,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_perception_face",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "face.ts"
     },
     {
@@ -10427,8 +10416,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_perception_face_faceresult",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "faceresult"
     },
     {
@@ -10438,8 +10427,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_perception_face_createfacelandmarker",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "createfacelandmarker()"
     },
     {
@@ -10479,7 +10468,7 @@
       "label": "splitHands()",
       "file_type": "code",
       "source_file": "src/perception/hand.ts",
-      "source_location": "L25",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_perception_hand_splithands",
       "community": 20,
@@ -10493,8 +10482,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_perception_normalize",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "normalize.ts"
     },
     {
@@ -10504,8 +10493,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_perception_normalize_normalize",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "normalize()"
     },
     {
@@ -10515,8 +10504,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "src_perception_normalize_writehand",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "writehand()"
     },
     {
@@ -10526,8 +10515,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_perception_pose",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "pose.ts"
     },
     {
@@ -10537,8 +10526,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_perception_pose_poseresult",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "poseresult"
     },
     {
@@ -10548,8 +10537,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_perception_pose_createposelandmarker",
-      "community": 20,
-      "community_name": "Capture",
+      "community": 23,
+      "community_name": "CLAUDE.md",
       "norm_label": "createposelandmarker()"
     },
     {
@@ -10636,8 +10625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_recognition_classifier",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "classifier.ts"
     },
     {
@@ -10647,8 +10636,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_recognition_classifier_layer",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "layer"
     },
     {
@@ -10658,8 +10647,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_recognition_classifier_model",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "model"
     },
     {
@@ -10680,8 +10669,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "classifier"
     },
     {
@@ -10691,8 +10680,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier_constructor",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": ".constructor()"
     },
     {
@@ -10702,8 +10691,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier_load",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": ".load()"
     },
     {
@@ -10713,8 +10702,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier_ready",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": ".ready()"
     },
     {
@@ -10724,8 +10713,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier_reset",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": ".reset()"
     },
     {
@@ -10735,8 +10724,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_recognition_classifier_classifier_predict",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": ".predict()"
     },
     {
@@ -10746,8 +10735,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "src_recognition_classifier_meanstd",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "meanstd()"
     },
     {
@@ -10757,8 +10746,8 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "src_recognition_classifier_forward",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "forward()"
     },
     {
@@ -10768,8 +10757,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "src_recognition_classifier_softmax",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 77,
+      "community_name": "classifier.ts",
       "norm_label": "softmax()"
     },
     {
@@ -10790,8 +10779,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_recognition_recognizer_mode",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 99,
+      "community_name": "core.ts",
       "norm_label": "mode"
     },
     {
@@ -10812,8 +10801,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "src_recognition_recognizer_smootherfor",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": "smootherfor()"
     },
     {
@@ -10823,8 +10812,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "src_recognition_recognizer_meantravel",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": "meantravel()"
     },
     {
@@ -10900,8 +10889,8 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": "recognizer"
     },
     {
@@ -10911,8 +10900,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer_constructor",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": ".constructor()"
     },
     {
@@ -10922,8 +10911,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer_load",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": ".load()"
     },
     {
@@ -10933,8 +10922,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer_ready",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": ".ready()"
     },
     {
@@ -10944,8 +10933,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer_dispose",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": ".dispose()"
     },
     {
@@ -10955,8 +10944,8 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "src_recognition_recognizer_recognizer_handleframe",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": ".handleframe()"
     },
     {
@@ -10999,8 +10988,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_recognition_smoothing_smoother_push",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community": 15,
+      "community_name": "graphify reference: extra exports and benchmark",
       "norm_label": ".push()"
     },
     {
@@ -11263,8 +11252,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ui_alert",
-      "community": 56,
-      "community_name": "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 \u2192 2*FEATURE_L",
+      "community": 0,
+      "community_name": "compilerOptions",
       "norm_label": "alert.tsx"
     },
     {
@@ -11274,8 +11263,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_ui_alert_alert",
-      "community": 56,
-      "community_name": "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 \u2192 2*FEATURE_L",
+      "community": 0,
+      "community_name": "compilerOptions",
       "norm_label": "alert()"
     },
     {
@@ -11301,21 +11290,10 @@
       "norm_label": "blendshape"
     },
     {
-      "label": "cameraErrorMessage()",
-      "file_type": "code",
-      "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "src_ui_cameraview_cameraerrormessage",
-      "community": 72,
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
-      "norm_label": "cameraerrormessage()"
-    },
-    {
       "label": "RawSample",
       "file_type": "code",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L33",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "src_ui_cameraview_rawsample",
       "community": 72,
@@ -11326,7 +11304,7 @@
       "label": "CameraViewImpl()",
       "file_type": "code",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L39",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "src_ui_cameraview_cameraviewimpl",
       "community": 72,
@@ -11337,7 +11315,7 @@
       "label": "CameraView",
       "file_type": "code",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L250",
+      "source_location": "L203",
       "_origin": "ast",
       "id": "src_ui_cameraview_cameraview",
       "community": 56,
@@ -11502,7 +11480,7 @@
       "label": "ITEMS",
       "file_type": "code",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_ui_landmarklegend_items",
       "community": 72,
@@ -11513,7 +11491,7 @@
       "label": "Swatch()",
       "file_type": "code",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L23",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "src_ui_landmarklegend_swatch",
       "community": 72,
@@ -11524,7 +11502,7 @@
       "label": "LandmarkLegendImpl()",
       "file_type": "code",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L46",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "src_ui_landmarklegend_landmarklegendimpl",
       "community": 72,
@@ -11535,7 +11513,7 @@
       "label": "LandmarkLegend",
       "file_type": "code",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L62",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "src_ui_landmarklegend_landmarklegend",
       "community": 72,
@@ -11626,8 +11604,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ui_signguide",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "signguide.tsx"
     },
     {
@@ -11637,8 +11615,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_ui_signguide_glossesfor",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "glossesfor()"
     },
     {
@@ -11648,8 +11626,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_ui_signguide_default_for",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "default_for"
     },
     {
@@ -11659,8 +11637,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_ui_signguide_signguideimpl",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "signguideimpl()"
     },
     {
@@ -11670,8 +11648,8 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "src_ui_signguide_signguide",
-      "community": 0,
-      "community_name": "compilerOptions",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "signguide"
     },
     {
@@ -11711,7 +11689,7 @@
       "label": "ThemeSwitch()",
       "file_type": "code",
       "source_file": "src/ui/ThemeSwitch.tsx",
-      "source_location": "L8",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "src_ui_themeswitch_themeswitch",
       "community": 2,
@@ -11747,8 +11725,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_ui_transcribe_transcribe",
-      "community": 56,
-      "community_name": "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 \u2192 2*FEATURE_L",
+      "community": 0,
+      "community_name": "compilerOptions",
       "norm_label": "transcribe()"
     },
     {
@@ -12030,7 +12008,7 @@
       "label": "PracticeSession",
       "file_type": "code",
       "source_file": "src/ui/practice/PracticeSession.tsx",
-      "source_location": "L346",
+      "source_location": "L344",
       "_origin": "ast",
       "id": "src_ui_practice_practicesession_practicesession",
       "community": 14,
@@ -12077,8 +12055,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "src_ui_practice_referenceskeleton_referenceskeleton",
-      "community": 56,
-      "community_name": "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 \u2192 2*FEATURE_L",
+      "community": 14,
+      "community_name": "main",
       "norm_label": "referenceskeleton"
     },
     {
@@ -12173,7 +12151,7 @@
       "label": "FingerspellSlot()",
       "file_type": "code",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L223",
+      "source_location": "L222",
       "_origin": "ast",
       "id": "src_ui_sentences_sentencebuilder_fingerspellslot",
       "community": 56,
@@ -12184,7 +12162,7 @@
       "label": "SentenceBuilderImpl()",
       "file_type": "code",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L333",
+      "source_location": "L331",
       "_origin": "ast",
       "id": "src_ui_sentences_sentencebuilder_sentencebuilderimpl",
       "community": 56,
@@ -12195,7 +12173,7 @@
       "label": "SentenceBuilder",
       "file_type": "code",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L454",
+      "source_location": "L452",
       "_origin": "ast",
       "id": "src_ui_sentences_sentencebuilder_sentencebuilder",
       "community": 56,
@@ -12371,7 +12349,7 @@
       "label": "StepLine()",
       "file_type": "code",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L147",
+      "source_location": "L146",
       "_origin": "ast",
       "id": "src_ui_tutorial_demotutorial_stepline",
       "community": 56,
@@ -12382,7 +12360,7 @@
       "label": "DemoTutorialImpl()",
       "file_type": "code",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L184",
+      "source_location": "L183",
       "_origin": "ast",
       "id": "src_ui_tutorial_demotutorial_demotutorialimpl",
       "community": 56,
@@ -12393,7 +12371,7 @@
       "label": "DemoTutorial",
       "file_type": "code",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L312",
+      "source_location": "L311",
       "_origin": "ast",
       "id": "src_ui_tutorial_demotutorial_demotutorial",
       "community": 56,
@@ -12407,8 +12385,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ui_tutorial_seenkey",
-      "community": 2,
-      "community_name": "package.json",
+      "community": 56,
+      "community_name": "Sample feature: mean + std per chunk, concatenated.     n_chunks=1 \u2192 2*FEATURE_L",
       "norm_label": "seenkey.ts"
     },
     {
@@ -12440,8 +12418,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "tools_golden",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "json"
     },
     {
@@ -12451,8 +12429,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tools_golden_golden",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "golden"
     },
     {
@@ -12462,8 +12440,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tools_golden_clips",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "clips"
     },
     {
@@ -12473,8 +12451,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tools_golden_rawclip",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "rawclip"
     },
     {
@@ -12484,8 +12462,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "tools_golden_framesfor",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "framesfor()"
     },
     {
@@ -12495,8 +12473,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "tools_golden_r6",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": "r6()"
     },
     {
@@ -12506,8 +12484,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "tools_golden_run",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
       "norm_label": "run()"
     },
     {
@@ -12517,8 +12495,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "tools_golden_out",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "out"
     },
     {
@@ -12528,8 +12506,8 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "tools_golden_n",
-      "community": 99,
-      "community_name": "core.ts",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
       "norm_label": "n"
     },
     {
@@ -14791,9 +14769,9 @@
       "file_type": "code",
       "source_file": "src/ui/Transcript.tsx",
       "source_location": "L41",
-      "community": 72,
+      "community": 15,
       "norm_label": "pickalternate()",
-      "community_name": "Drop a random 5-30% of frames to simulate signing-pace variation.     Order pres",
+      "community_name": "graphify reference: extra exports and benchmark",
       "id": "src_ui_transcript_pickalternate"
     },
     {
@@ -18589,7 +18567,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L76",
+      "source_location": "L58",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "motion_app_scripts_render_video"
@@ -47621,7 +47599,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L26",
+      "source_location": "L22",
       "weight": 1.0,
       "source": "src_input_camerasource",
       "target": "src_input_camerasource_camerasource",
@@ -47847,7 +47825,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L47",
+      "source_location": "L41",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_constructor",
@@ -47857,7 +47835,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L139",
+      "source_location": "L126",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_loop",
@@ -47867,7 +47845,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L53",
+      "source_location": "L45",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_onframe",
@@ -47877,7 +47855,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L59",
+      "source_location": "L51",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_onraw",
@@ -47887,7 +47865,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L63",
+      "source_location": "L55",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_onrawface",
@@ -47897,7 +47875,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L67",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_onrawpose",
@@ -47907,7 +47885,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L71",
+      "source_location": "L63",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_start",
@@ -47917,7 +47895,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L117",
+      "source_location": "L104",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_stop",
@@ -47927,7 +47905,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L126",
+      "source_location": "L113",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_camerasource_camerasource_teardown",
@@ -47938,7 +47916,7 @@
       "context": "type",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L26",
+      "source_location": "L22",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_input_inputsource_inputsource",
@@ -47949,7 +47927,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L35",
+      "source_location": "L31",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_perception_face_faceresult",
@@ -47960,7 +47938,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L37",
+      "source_location": "L33",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource",
       "target": "src_perception_pose_poseresult",
@@ -47993,7 +47971,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L199",
+      "source_location": "L156",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_onframe"
@@ -48014,7 +47992,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L150",
+      "source_location": "L111",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_onraw"
@@ -48035,7 +48013,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L132",
+      "source_location": "L93",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_onrawface"
@@ -48056,7 +48034,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L114",
+      "source_location": "L75",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_onrawpose"
@@ -48066,7 +48044,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L114",
+      "source_location": "L101",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_start",
       "target": "src_input_camerasource_camerasource_loop",
@@ -48077,7 +48055,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L80",
+      "source_location": "L69",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_start",
       "target": "src_input_camerasource_camerasource_teardown",
@@ -48089,7 +48067,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L96",
+      "source_location": "L83",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_start",
       "target": "src_perception_face_createfacelandmarker"
@@ -48100,7 +48078,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L93",
+      "source_location": "L82",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_start",
       "target": "src_perception_hand_createhandlandmarker"
@@ -48111,7 +48089,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L100",
+      "source_location": "L87",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_start",
       "target": "src_perception_pose_createposelandmarker"
@@ -48122,7 +48100,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L202",
+      "source_location": "L159",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_start"
@@ -48132,7 +48110,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L119",
+      "source_location": "L106",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_stop",
       "target": "src_input_camerasource_camerasource_teardown",
@@ -48144,7 +48122,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L213",
+      "source_location": "L166",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_input_camerasource_camerasource_stop"
@@ -48155,7 +48133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L160",
+      "source_location": "L147",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_loop",
       "target": "src_perception_hand_splithands"
@@ -48166,7 +48144,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/input/CameraSource.ts",
-      "source_location": "L168",
+      "source_location": "L155",
       "weight": 1.0,
       "source": "src_input_camerasource_camerasource_loop",
       "target": "src_perception_normalize_normalize"
@@ -49866,7 +49844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/perception/assets.ts",
-      "source_location": "L45",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "src_perception_assets",
       "target": "src_perception_assets_configureperceptionassets",
@@ -49883,16 +49861,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/perception/assets.ts",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "src_perception_assets",
-      "target": "src_perception_assets_withdelegatefallback",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -49957,72 +49925,6 @@
       "source": "src_perception_pose",
       "target": "src_perception_assets_perceptionassets",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/perception/face.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_perception_face",
-      "target": "src_perception_assets_withdelegatefallback",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/perception/face.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_perception_face_createfacelandmarker",
-      "target": "src_perception_assets_withdelegatefallback"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/perception/hand.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "src_perception_hand",
-      "target": "src_perception_assets_withdelegatefallback",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/perception/hand.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_perception_hand_createhandlandmarker",
-      "target": "src_perception_assets_withdelegatefallback"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/perception/pose.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_perception_pose",
-      "target": "src_perception_assets_withdelegatefallback",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/perception/pose.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_perception_pose_createposelandmarker",
-      "target": "src_perception_assets_withdelegatefallback"
     },
     {
       "relation": "contains",
@@ -50102,7 +50004,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L180",
+      "source_location": "L141",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_perception_hand_splithands"
@@ -51222,7 +51124,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L233",
+      "source_location": "L232",
       "weight": 1.0,
       "source": "src_ui_sentences_sentencebuilder_fingerspellslot",
       "target": "src_recognition_useliveletter_useliveletter"
@@ -51642,7 +51544,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L339",
+      "source_location": "L337",
       "weight": 1.0,
       "source": "src_ui_sentences_sentencebuilder_sentencebuilderimpl",
       "target": "src_state_store_usestore"
@@ -52005,17 +51907,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "src_ui_cameraview",
-      "target": "src_ui_cameraview_cameraerrormessage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L250",
+      "source_location": "L203",
       "weight": 1.0,
       "source": "src_ui_cameraview",
       "target": "src_ui_cameraview_cameraview",
@@ -52025,7 +51917,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L250",
+      "source_location": "L203",
       "weight": 1.0,
       "context": "argument",
       "source": "src_ui_cameraview",
@@ -52036,7 +51928,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L33",
+      "source_location": "L18",
       "weight": 1.0,
       "source": "src_ui_cameraview",
       "target": "src_ui_cameraview_rawsample",
@@ -52164,17 +52056,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L205",
-      "weight": 1.0,
-      "source": "src_ui_cameraview_cameraviewimpl",
-      "target": "src_ui_cameraview_cameraerrormessage",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -52202,7 +52083,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L162",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_ui_landmarkdraw_drawface"
@@ -52213,7 +52094,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L174",
+      "source_location": "L135",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_ui_landmarkdraw_drawhand"
@@ -52224,7 +52105,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L169",
+      "source_location": "L130",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_ui_landmarkdraw_drawpose"
@@ -52235,7 +52116,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/CameraView.tsx",
-      "source_location": "L174",
+      "source_location": "L135",
       "weight": 1.0,
       "source": "src_ui_cameraview_cameraviewimpl",
       "target": "src_ui_landmarkdraw_handcolor"
@@ -52465,21 +52346,10 @@
       "confidence_score": 0.5
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_ui_landmarklegend",
-      "target": "src_ui_lab",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "src_ui_landmarklegend",
       "target": "src_ui_landmarklegend_items",
@@ -52489,7 +52359,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L62",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "src_ui_landmarklegend",
       "target": "src_ui_landmarklegend_landmarklegend",
@@ -52499,7 +52369,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L62",
+      "source_location": "L60",
       "weight": 1.0,
       "context": "argument",
       "source": "src_ui_landmarklegend",
@@ -52510,7 +52380,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/LandmarkLegend.tsx",
-      "source_location": "L23",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "src_ui_landmarklegend",
       "target": "src_ui_landmarklegend_swatch",
@@ -52887,7 +52757,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/ThemeSwitch.tsx",
-      "source_location": "L8",
+      "source_location": "L6",
       "weight": 1.0,
       "source": "src_ui_themeswitch",
       "target": "src_ui_themeswitch_themeswitch",
@@ -53310,7 +53180,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/practice/PracticeSession.tsx",
-      "source_location": "L346",
+      "source_location": "L344",
       "weight": 1.0,
       "source": "src_ui_practice_practicesession",
       "target": "src_ui_practice_practicesession_practicesession",
@@ -53320,7 +53190,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "src/ui/practice/PracticeSession.tsx",
-      "source_location": "L346",
+      "source_location": "L344",
       "weight": 1.0,
       "context": "argument",
       "source": "src_ui_practice_practicesession",
@@ -53481,7 +53351,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L223",
+      "source_location": "L222",
       "weight": 1.0,
       "source": "src_ui_sentences_sentencebuilder",
       "target": "src_ui_sentences_sentencebuilder_fingerspellslot",
@@ -53491,7 +53361,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L454",
+      "source_location": "L452",
       "weight": 1.0,
       "source": "src_ui_sentences_sentencebuilder",
       "target": "src_ui_sentences_sentencebuilder_sentencebuilder",
@@ -53501,7 +53371,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L454",
+      "source_location": "L452",
       "weight": 1.0,
       "context": "argument",
       "source": "src_ui_sentences_sentencebuilder",
@@ -53574,7 +53444,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/ui/sentences/SentenceBuilder.tsx",
-      "source_location": "L341",
+      "source_location": "L339",
       "weight": 1.0,
       "source": "src_ui_sentences_sentencebuilder_sentencebuilderimpl",
       "target": "src_ui_sentences_sentencebuilder_templates"
@@ -53676,7 +53546,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L312",
+      "source_location": "L311",
       "weight": 1.0,
       "source": "src_ui_tutorial_demotutorial",
       "target": "src_ui_tutorial_demotutorial_demotutorial",
@@ -53686,7 +53556,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L312",
+      "source_location": "L311",
       "weight": 1.0,
       "context": "argument",
       "source": "src_ui_tutorial_demotutorial",
@@ -53717,7 +53587,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/tutorial/DemoTutorial.tsx",
-      "source_location": "L147",
+      "source_location": "L146",
       "weight": 1.0,
       "source": "src_ui_tutorial_demotutorial",
       "target": "src_ui_tutorial_demotutorial_stepline",
@@ -55674,5 +55544,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6cd98c265f1ed4a75a9b348a86166f28d379e043"
+  "built_at_commit": "7e82aab103f8c0ca4228bebc641d61a7a4bf2fe8"
 }

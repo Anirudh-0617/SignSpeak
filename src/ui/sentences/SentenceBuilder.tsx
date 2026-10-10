@@ -164,8 +164,9 @@ function WordSlot({ gloss, onPass }: { gloss: string; onPass: (token: string) =>
 
   return (
     // Three columns on lg: reference, you, and the instruction + readout, so
-    // the status sits beside the stages instead of under them.
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,17rem)] lg:gap-6">
+    // the status sits beside the stages instead of under them. Below that the
+    // two stages stay side by side (a phone has to show both to copy from).
+    <div className="grid grid-cols-2 items-start gap-3 md:gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,17rem)] lg:gap-6">
       <div className="grid content-start gap-2">
         <StageLabel>Reference</StageLabel>
         <ReferenceSkeleton gloss={gloss} />
@@ -174,7 +175,7 @@ function WordSlot({ gloss, onPass }: { gloss: string; onPass: (token: string) =>
         <StageLabel>You</StageLabel>
         <CameraView onFrame={live.handleFrame} />
       </div>
-      <div className="grid content-start gap-4 border-t border-rule pt-4 md:col-span-2 lg:col-span-1 lg:border-t-0 lg:pt-7">
+      <div className="grid content-start gap-4 border-t border-rule pt-4 col-span-2 lg:col-span-1 lg:border-t-0 lg:pt-7">
         <p className="text-ink-2">
           Sign <span className="g-gloss text-ink">{gloss}</span>. Copy the reference figure.
         </p>
@@ -317,7 +318,8 @@ function FingerspellSlot({
             </button>
           </div>
         </div>
-        <div className="grid content-start gap-2">
+        {/* Camera first on phones so the spelled letters sit right under it. */}
+        <div className="order-first grid content-start gap-2 md:order-none">
           <StageLabel>You</StageLabel>
           <CameraView onFrame={live.handleFrame} />
         </div>

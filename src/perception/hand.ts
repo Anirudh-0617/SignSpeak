@@ -5,17 +5,19 @@ import {
   type NormalizedLandmark,
 } from '@mediapipe/tasks-vision';
 
-import { perceptionAssets } from './assets';
+import { perceptionAssets, withDelegateFallback } from './assets';
 
 export type HandResult = HandLandmarkerResult;
 
 export async function createHandLandmarker(): Promise<HandLandmarker> {
   const fileset = await FilesetResolver.forVisionTasks(perceptionAssets.wasm);
-  return HandLandmarker.createFromOptions(fileset, {
-    baseOptions: { modelAssetPath: perceptionAssets.hand, delegate: 'GPU' },
-    runningMode: 'VIDEO',
-    numHands: 2,
-  });
+  return withDelegateFallback((delegate) =>
+    HandLandmarker.createFromOptions(fileset, {
+      baseOptions: { modelAssetPath: perceptionAssets.hand, delegate },
+      runningMode: 'VIDEO',
+      numHands: 2,
+    }),
+  );
 }
 
 // ponytail: split by MediaPipe's handedness call so left/right slots match

@@ -27,6 +27,19 @@ export const perceptionAssets = {
   pose: `${CDN_MODELS}/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task`,
 };
 
+/** Create on GPU, retry on CPU. Some Android WebViews and older iPhones expose
+ *  WebGL but fail MediaPipe's GPU init; CPU is slower but still runs. */
+export async function withDelegateFallback<T>(
+  create: (delegate: 'GPU' | 'CPU') => Promise<T>,
+): Promise<T> {
+  try {
+    return await create('GPU');
+  } catch (e) {
+    console.warn('[perception] GPU delegate failed, falling back to CPU:', e);
+    return create('CPU');
+  }
+}
+
 /** Call once, before the first landmarker is created. Each create* function
  *  reads these at call time, so ordering is the only requirement. */
 export function configurePerceptionAssets(

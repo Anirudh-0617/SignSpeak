@@ -49,8 +49,8 @@ export default function App() {
       <a href="#main" className="g-skip">
         Skip to content
       </a>
-      <header className="sticky top-0 z-40 border-b g-rule bg-page">
-        <div className={`${WRAP} flex flex-wrap items-stretch gap-x-8`}>
+      <header className="sticky top-0 z-40 border-b g-rule bg-page g-safe-t">
+        <div className={`${WRAP} flex flex-wrap items-stretch gap-x-6 md:gap-x-8`}>
           <Link to="/" className="flex h-14 items-center font-display text-[1.1rem] tracking-[-0.02em] g-t1">
             SignSpeak
           </Link>
@@ -63,7 +63,7 @@ export default function App() {
             label="App mode"
             className="order-last h-11 w-full md:order-none md:h-14 md:w-auto"
           />
-          <div className="ml-auto flex h-14 items-center gap-5 text-[13px]">
+          <div className="ml-auto flex h-14 items-center gap-4 text-[13px] sm:gap-5">
             <InstallButton />
             <button
               type="button"
@@ -73,7 +73,12 @@ export default function App() {
             >
               Tutorial
             </button>
-            <ThemeSwitch theme={theme} toggle={toggleTheme} />
+            <span className="sm:hidden">
+              <ThemeSwitch theme={theme} toggle={toggleTheme} compact />
+            </span>
+            <span className="hidden sm:contents">
+              <ThemeSwitch theme={theme} toggle={toggleTheme} />
+            </span>
           </div>
         </div>
       </header>
@@ -97,7 +102,7 @@ export default function App() {
         )}
       </main>
 
-      <footer className="border-t g-rule">
+      <footer className="border-t g-rule g-safe-b">
         <div className={`${WRAP} flex h-12 items-center justify-between text-xs g-t3`}>
           <span>Research preview. Recognition runs on this device.</span>
           <a href="mailto:anirudhannaboina1@gmail.com?subject=SignSpeak%20feedback" className="g-quiet">

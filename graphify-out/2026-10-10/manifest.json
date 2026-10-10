@@ -20,13 +20,13 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1791601531.0519285,
-    "ast_hash": "3fd1fb8e4a0d25287b38dbcfac8de48c",
+    "mtime": 1790789882.0,
+    "ast_hash": "5a262499f4c045f950800a74fe7f12f6",
     "semantic_hash": ""
   },
   "src/input/CameraSource.ts": {
-    "mtime": 1791601342.2165012,
-    "ast_hash": "b39d867eabfd006447606bffd3ad9b57",
+    "mtime": 1785777576.0,
+    "ast_hash": "291e4a2d9ec53f8c3d5021a781d4fabe",
     "semantic_hash": ""
   },
   "src/input/InputSource.ts": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/ui/CameraView.tsx": {
-    "mtime": 1791601616.349371,
-    "ast_hash": "549416245e0904cab7ac4c2cff2ae4c1",
+    "mtime": 1790788850.0,
+    "ast_hash": "ae5ebbdce24b93efc7de3ff750efbbbd",
     "semantic_hash": ""
   },
   "src/ui/CaptureControls.tsx": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1791601582.0865672,
-    "ast_hash": "9a2aa8e6d857cf8fe027e10aa3264055",
+    "mtime": 1790711193.0,
+    "ast_hash": "919be5c71d13931a2eb0a2a444c812ff",
     "semantic_hash": ""
   },
   "ml/capture/README.md": {
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "src/perception/hand.ts": {
-    "mtime": 1791601309.0574193,
-    "ast_hash": "e21c6b366108038ee4589f78964e447d",
+    "mtime": 1790189287.0,
+    "ast_hash": "081be28e6f89578e76e4df6159a3516f",
     "semantic_hash": ""
   },
   "VULNERABILITIES.md": {
@@ -655,18 +655,18 @@
     "semantic_hash": ""
   },
   "src/perception/assets.ts": {
-    "mtime": 1791601292.5019634,
-    "ast_hash": "c32d3bfca0d0ab71c08a55f5b3e1905a",
+    "mtime": 1790189266.0,
+    "ast_hash": "2a3e89611b121f71bcf1656d576b060c",
     "semantic_hash": ""
   },
   "src/perception/face.ts": {
-    "mtime": 1791601315.7335572,
-    "ast_hash": "cb24c7b379295f2176d1fc9a5d62673c",
+    "mtime": 1790189303.0,
+    "ast_hash": "503d33095604347b8945a219433ff66b",
     "semantic_hash": ""
   },
   "src/perception/pose.ts": {
-    "mtime": 1791601318.3765013,
-    "ast_hash": "710f8c0d98b827ef036a7c2c5827eac2",
+    "mtime": 1790189323.0,
+    "ast_hash": "8b1e8cd6449116bb44c9a9297a54916a",
     "semantic_hash": ""
   },
   "src/practice/config.ts": {
@@ -715,8 +715,8 @@
     "semantic_hash": ""
   },
   "src/ui/LandmarkLegend.tsx": {
-    "mtime": 1791601625.2699342,
-    "ast_hash": "efa6e0838ce6dd51fccdf8fd299a2cf7",
+    "mtime": 1790789100.0,
+    "ast_hash": "d04138c8fc9cd98992cd2101259b265a",
     "semantic_hash": ""
   },
   "src/ui/Practice.tsx": {
@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "src/ui/practice/PracticeSession.tsx": {
-    "mtime": 1791601665.121509,
-    "ast_hash": "1e38e962d38cd587c7905e53ccb87394",
+    "mtime": 1790789901.0,
+    "ast_hash": "92c4f886370c85e7d0861a2f78a60de7",
     "semantic_hash": ""
   },
   "src/ui/practice/ReferenceSkeleton.tsx": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "src/ui/sentences/SentenceBuilder.tsx": {
-    "mtime": 1791601701.4588556,
-    "ast_hash": "6cf7e26ce1a65ed51bdce357dc0b82cb",
+    "mtime": 1790789460.0,
+    "ast_hash": "b790346737b96a4e9d5d00473e5e4dc6",
     "semantic_hash": ""
   },
   "src/ui/theme.ts": {
@@ -785,8 +785,8 @@
     "semantic_hash": ""
   },
   "src/ui/tutorial/DemoTutorial.tsx": {
-    "mtime": 1791601711.2517498,
-    "ast_hash": "6aa931d63b1f6c896d65c0486caf92d5",
+    "mtime": 1790789527.0,
+    "ast_hash": "e38d08cbb0d48cbec4f6371efdb47f43",
     "semantic_hash": ""
   },
   "src/ui/tutorial/seenKey.ts": {
@@ -970,8 +970,8 @@
     "semantic_hash": ""
   },
   "src/ui/Composer.tsx": {
-    "mtime": 1791601501.580575,
-    "ast_hash": "d1fce6f4b5ce341591b5b146493cbb34",
+    "mtime": 1790789882.0,
+    "ast_hash": "8e7511a5e45c1f54e350a6abdbfbada8",
     "semantic_hash": ""
   },
   "src/ui/ModeTabs.tsx": {
@@ -980,18 +980,18 @@
     "semantic_hash": ""
   },
   "src/ui/ThemeSwitch.tsx": {
-    "mtime": 1791601488.3700223,
-    "ast_hash": "b0c0275bda63ccd41bc5d9e45b67cab6",
+    "mtime": 1790788813.0,
+    "ast_hash": "ffd2b0c8d2bc855e1a6c6c539bcac380",
     "semantic_hash": ""
   },
   "src/ui/Transcribe.tsx": {
-    "mtime": 1791601497.310221,
-    "ast_hash": "6854b83df6310fa35e0ea9f715eab9a0",
+    "mtime": 1790789100.0,
+    "ast_hash": "683f60c62b615d2788c93284ba273103",
     "semantic_hash": ""
   },
   "src/ui/lab.ts": {
-    "mtime": 1791601616.3490827,
-    "ast_hash": "e46e052835484aa9709ea873ba9a1f1e",
+    "mtime": 1790788813.0,
+    "ast_hash": "99a965f55857a99b7c919a42e11567aa",
     "semantic_hash": ""
   },
   "motion/.claude/launch.json": {
@@ -1602,21 +1602,6 @@
   "vercel.json": {
     "mtime": 1791567875.0195477,
     "ast_hash": "6e5518d77e4f749907c0e1d6e81bd315",
-    "semantic_hash": ""
-  },
-  "public/apple-touch-icon.png": {
-    "mtime": 1791601568.164471,
-    "ast_hash": "f73bfa2d91aa8c28f5c48a73d5286db9",
-    "semantic_hash": ""
-  },
-  "public/icon-192.png": {
-    "mtime": 1791601568.1409576,
-    "ast_hash": "1c038394c098a58897a604b96066961a",
-    "semantic_hash": ""
-  },
-  "public/icon-512.png": {
-    "mtime": 1791601561.6523943,
-    "ast_hash": "ce41f60ebd2dd4e98e72d3d665fee1d3",
     "semantic_hash": ""
   }
 }
